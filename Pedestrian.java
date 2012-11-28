@@ -9,6 +9,9 @@ import org.openstreetmap.osmosis.core.domain.v0_6.Relation;
 import org.openstreetmap.osmosis.core.domain.v0_6.Way;
 import org.openstreetmap.travelingsalesman.routing.IVehicle;
 
+/**
+ * @author Atindriyo Sanyal, UCLA
+ */
 public class Pedestrian implements IVehicle
 {
 
