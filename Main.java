@@ -80,6 +80,7 @@ import org.openstreetmap.travelingsalesman.routing.selectors.Pedestrian;
  * Main-class of the traveling-salesman -application.
  * 
  * @author <a href="mailto:Marcus@Wolschon.biz">Marcus Wolschon</a>
+ * @author Atindriyo Sanyal, UCLA
  */
 public final class Main {
 
