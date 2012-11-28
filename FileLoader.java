@@ -47,6 +47,7 @@ import org.openstreetmap.osmosis.core.buffer.v0_6.EntityBuffer;
  * via program-code easier. It wraps the existing functionality
  * in <a href="http://wiki.openstreetmap.org/index.php/Osmosis">Osmosis</a>.
  * @author <a href="mailto:Marcus@Wolschon.biz">Marcus Wolschon</a>
+ * @author Atindriyo Sanyal, UCLA
  */
 public class FileLoader {
 
