@@ -9,6 +9,16 @@ import org.openstreetmap.osmosis.core.domain.v0_6.EntityType;
 import org.openstreetmap.osmosis.core.domain.v0_6.OsmUser;
 import org.openstreetmap.osmosis.core.domain.v0_6.WayNode;
 
+/**
+ * 
+ * A segment is a part of a Routing Step.
+ * Consists of a Start Node, an end node and the UV Exposure along the left and right walkways.
+ * It is a serializable entity and implements the Comparable interface.
+ * 
+ * @author Atindriyo Sanyal, UCLA
+ *
+ */
+
 public class Segment extends Entity implements ISegment, Comparable<Segment>
 {
     public WayNode start;
