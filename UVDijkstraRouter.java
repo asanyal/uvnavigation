@@ -43,6 +43,10 @@ import org.openstreetmap.osmosis.core.domain.v0_6.WayNode;
  * <li>The metric is never negative</li>
  * <li>the metric does only depend on the RoutingStep, not on the step we took
  * before that (e.g.speed-decreased in sharp corners)</li>
+ * 
+ * <li> Makes a decision based on a node's distance from the target node.
+ * A comparator (NodeUVDistanceComparator) has been written to implement this.</li>
+ * 
  * </ul>
  * 
  * @author Atindriyo Sanyal, UCLA
@@ -201,6 +205,11 @@ public class UVDijkstraRouter implements IRouter
         return cost;
     }
 
+    /**
+     * Utility method for Sorting the pairs within a Map based on the values.
+     * @param bestDistances
+     * @return sorted Hashmap
+     */
     private HashMap<Node, Double> sortHashMap(Map<Node, Double> bestDistances)
     {
         Map<Node, Double> tempMap = new HashMap<Node, Double>();
@@ -310,6 +319,7 @@ public class UVDijkstraRouter implements IRouter
                 // return with shortest path
                 LOG.log(Level.INFO,
                         "UV DijkstraRouter found a shortest path, reconstructing path...");
+                //a backtracking implementation to print all nodes taken along the path
                 return reconstructShortestPath(aMap, aTargetNode, aStartNode,
                                                bestStepsTo, bestDistances);
             }
@@ -536,6 +546,14 @@ public class UVDijkstraRouter implements IRouter
         return retval;
     }
 
+    /**
+     * A utility method for calculating the UV Magnitude of a street. 
+     * The UV exposure is simply taken as the sum of UV exposure on 
+     * the left and the right side of the street.
+     * 
+     * @param nextStep
+     * @return UV Exposure
+     */
     private Double calculateUVMagnitude(RoutingStep nextStep)
     {
         Way w = nextStep.getWay();

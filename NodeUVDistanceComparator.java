@@ -12,9 +12,16 @@ import org.openstreetmap.osm.data.coordinates.Coordinate;
 import org.openstreetmap.osmosis.core.domain.v0_6.Node;
 
 /**
- * This comparator compares based on the distance
- * to a target-node.
- * @author Atindriyo Sanyal
+ * Uses the Linear Weight Function method to assign priority weights to distance and Ultraviolet exposure on streets.
+ * 
+ * This comparator is the place where the different factors affecting the decision to choose
+ * whether to take a particular road or not is decided.
+ * 
+ * A key point is that the comparator compares based on the distance to a "target-node "instead of strictly 
+ * following the Dijkstra's Paradigm of deciding a Route solely based on the next node's distance from
+ * the current.  
+ * 
+ * @author Atindriyo Sanyal, UCLA
  */
 public class NodeUVDistanceComparator implements Comparator<Node> {
 

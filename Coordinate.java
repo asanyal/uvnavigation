@@ -16,6 +16,7 @@ import org.openstreetmap.osmosis.core.domain.v0_6.Node;
  * package. Routines there should only use LatLon or EastNorth
  *
  * @author imi
+ * @author Atindriyo Sanyal, UCLA
  */
 public abstract class Coordinate {
 
