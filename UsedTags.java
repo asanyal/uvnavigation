@@ -21,6 +21,8 @@ import org.openstreetmap.osmosis.core.domain.v0_6.Way;
 
 /**
  * Selector that lets only elements pass that are used in routing or rendering.
+ * 
+ * @author Atindriyo Sanyal, UCLA
  */
 public class UsedTags extends Tags implements Selector/*
                                                        * , org.openstreetmap.
