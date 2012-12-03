@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -246,8 +247,8 @@ public class UVDijkstraRouter implements IRouter
 
         LOG.log(Level.INFO, " Ultraviolet DijkstraRouter starting...");
 
-        //SortedSet<Node> nodesToVisit = new TreeSet<Node>(new NodeDistanceComparator(aMap, aTargetNode));
-        Queue<Node> nodesToVisit = new LinkedList<Node>();
+        SortedSet<Node> nodesToVisit = new TreeSet<Node>(new NodeUVDistanceComparator(aMap, aTargetNode));
+        //Queue<Node> nodesToVisit = new LinkedList<Node>();
         Map<Long, Double> bestDistances = new HashMap<Long, Double>(); // nodeID->best
                                                                        // Metric
                                                                        // of a
@@ -282,33 +283,37 @@ public class UVDijkstraRouter implements IRouter
         {
             bestStepsTo.put(nextStep.getEndNode().getId(), nextStep);
             
-            double weightedDist = (linearWeight(0) * calculateUVMagnitude(nextStep))
-                    + (linearWeight(1) * calculateDistance(aMap, null, nextStep));
+            double weightedDist = //(linearWeight(0) * calculateUVMagnitude(nextStep)) 
+                    calculateDistance(aMap, null, nextStep);
 
             bestDistances.put(nextStep.getEndNode().getId(), weightedDist);
             bestNodeDistances.put(nextStep.getEndNode(), weightedDist);
+            nextStep.getEndNode().setUvValue(calculateUVMagnitude(nextStep));
             nodesToVisit.add(nextStep.getEndNode());
-            System.out.println("Node: "+ nextStep.getEndNode() + ", UV Distance: " + weightedDist);
+            System.out.println("Node: "+ nextStep.getEndNode() + ", Distance: " + weightedDist);
         }
-//        bestNodeDistances = sortHashMap(bestNodeDistances);
-//        nodesToVisit.addAll(bestNodeDistances.keySet());
 
         // ------------------------------------------------------------------------
         // try to find better ways to each node in bestDistances
         while (!nodesToVisit.isEmpty())
         {
-            Node currentNode = nodesToVisit.poll(); 
+            Node currentNode = nodesToVisit.first(); 
             //nodesToVisit.remove(currentNode);
+            nodesToVisit.clear();
             nodeIDsVisited.add(currentNode.getId());
+            
+            System.out.println("Current: " + currentNode.getId() + " Data: " );
 
             if (currentNode.getId() == aTargetNode.getId())
             {
+                System.out.println("FOUND THE PATH ");
                 // return with shortest path
                 LOG.log(Level.INFO,
                         "UV DijkstraRouter found a shortest path, reconstructing path...");
                 return reconstructShortestPath(aMap, aTargetNode, aStartNode,
                                                bestStepsTo, bestDistances);
             }
+
             nextSteps = getNextNodes(aMap, aTargetNode, currentNode,
                     nodeIDsVisited, aSelector);
             
@@ -320,7 +325,9 @@ public class UVDijkstraRouter implements IRouter
             {
                 Node nextNode = nextStep.getEndNode();
 
-                double calculatedDistance = (linearWeight(0) * calculateUVMagnitude(nextStep)) + (linearWeight(1) * calculateDistance(aMap, bestStepsTo.get(currentNode.getId()), nextStep));
+                double calculatedDistance = calculateDistance(aMap, bestStepsTo.get(currentNode.getId()), nextStep);
+                                             //calculateUVMagnitude(nextStep) + 
+                                            //calculateDistance(aMap, bestStepsTo.get(currentNode.getId()), nextStep));
 
                 if (!bestDistances.containsKey(nextNode.getId())
                   || bestDistances.get(nextNode.getId()) > bestDistanceToCurrentNode + calculatedDistance)
@@ -329,13 +336,12 @@ public class UVDijkstraRouter implements IRouter
                     bestDistances.put(nextNode.getId(), bestDistanceToCurrentNode + calculatedDistance);
                     bestNodeDistances.put(nextNode, bestDistanceToCurrentNode + calculatedDistance);
                     bestStepsTo.put(nextNode.getId(), nextStep);
+                    
+                    nextNode.setUvValue(calculateUVMagnitude(nextStep));
                     nodesToVisit.add(nextNode);
-                    System.out.println("Best UV Path updated");
                 }
-                System.out.println("Node: "+ nextStep.getEndNode() + ", UV Distance: " + calculatedDistance);
+                System.out.println("Node: "+ nextStep.getEndNode() + ", Distance: " + calculatedDistance);
             }
-//            bestNodeDistances = sortHashMap(bestNodeDistances);
-//            nodesToVisit.addAll(bestNodeDistances.keySet());
         }
 
         LOG.log(Level.INFO, "UV DijkstraRouter found nothing");
@@ -344,18 +350,6 @@ public class UVDijkstraRouter implements IRouter
         return null;
     }
 
-    private Double linearWeight(int i)
-    {
-        switch (i)
-        {
-        case 0:
-            return 0.3;
-        case 1:
-            return 0.7;
-        default:
-            return (double) 0;
-        }
-    }
 
     /**
      * Construct the route with the best metric given the steps.
@@ -377,9 +371,14 @@ public class UVDijkstraRouter implements IRouter
             final Map<Long, RoutingStep> bestStepsTo,
             final Map<Long, Double> aBestDistances)
     {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Reconstructing by backtracking");
+        
         List<RoutingStep> steps = new LinkedList<RoutingStep>();
         Node currentNode = aTargetNode;
         RoutingStep lastStep = null;
+        
         while (currentNode.getId() != aStartNode.getId())
         {
             RoutingStep bestStep = bestStepsTo.get(currentNode.getId());
@@ -401,11 +400,11 @@ public class UVDijkstraRouter implements IRouter
             if (lastStep != null
                     && lastStep.getWay().getId() == bestStep.getWay().getId())
             {
-
+                System.out.println("Node : " + currentNode.getId());
                 // no loops
                 assert !(lastStep.getStartNode().getId() == bestStep
                         .getEndNode().getId() && lastStep.getEndNode().getId() == bestStep
-                        .getStartNode().getId()) : "Found a loop in Dijkstra!!\n"
+                        .getStartNode().getId()) : "Found a loop in UV Dijkstra!!\n"
                         + "Node: "
                         + lastStep.getStartNode().getId()
                         + " road-dist-to-target="
@@ -518,7 +517,7 @@ public class UVDijkstraRouter implements IRouter
                                 way));
                 }
 
-                if (index > 0 /*&& !aSelector.isOneway(aMap, way)*/)
+                if (index > 0)
                 {
                     Node node = aMap.getNodeByID(wayNodeList.get(index - 1).getNodeId());
                     if (!forbiddenNodeIDs.contains(node.getId())
@@ -605,5 +604,4 @@ public class UVDijkstraRouter implements IRouter
     {
         myMetric = aMetric;
     }
-
 }

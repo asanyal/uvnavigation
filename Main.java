@@ -106,8 +106,7 @@ public final class Main {
 
             // ------------------------------- configure settings
 
-            ConfigurationSection rootConfigSection = Settings
-                    .getRootConfigurationSection();
+            ConfigurationSection rootConfigSection = Settings.getRootConfigurationSection();
             rootConfigSection.addSubSections(new OsmNavigationConfigSection());
             rootConfigSection.addSubSections(new TSNavigationConfigSection());
 
@@ -375,6 +374,7 @@ public final class Main {
         for (int i = 0; i < nodes.length - 1; i++) {
             Route route = router.route(map, nodes[i + 1], nodes[i], vehicle);
             if (route == null) {
+                
                 System.err.println("No route found from " + nodes[i].getId()
                         + " to " + nodes[i + 1].getId());
                 System.exit(-1);

@@ -1,28 +1,45 @@
+
 package org.openstreetmap.travelingsalesman.routing.routers;
 
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.Iterator;
+
+import javax.swing.text.html.HTML.Tag;
 
 import org.openstreetmap.osm.data.IDataSet;
+import org.openstreetmap.osm.data.coordinates.Coordinate;
+
 import org.openstreetmap.osmosis.core.domain.v0_6.Node;
 
 /**
- * 
+ * This comparator compares based on the distance
+ * to a target-node.
  * @author Atindriyo Sanyal
- *
  */
-public class NodeUVDistanceComparator implements Comparator<Node>
-{
+public class NodeUVDistanceComparator implements Comparator<Node> {
 
-    private HashMap<Node, Double> bestDistances;
+    /**
+     * The node to compare the distance to.
+     */
+    private Node targetNode;
 
-    public NodeUVDistanceComparator(Map<Node, Double>bestNodeDistances)
-    {
+    /**
+     * The map we operate on.
+     */
+    //private IDataSet myMap;
+
+    /**
+     * @param aTargetNode The node to compare the distance to.
+     * @param aMap The map we operate on.
+     * one for comparison.
+     */
+    public NodeUVDistanceComparator(final IDataSet aMap, final Node aTargetNode) {
         super();
-        this.bestDistances = new HashMap<Node, Double>(bestNodeDistances);
+        //this.myMap = aMap;
+        this.targetNode = aTargetNode;
     }
+
+
 
     /**
      * @param stepA first node to compare
@@ -32,15 +49,45 @@ public class NodeUVDistanceComparator implements Comparator<Node>
      */
     public int compare(final Node stepA, final Node stepB) {
 
-        double a = (bestDistances.get(stepA)!= null) ? bestDistances.get(stepA) : 0;
-        double b = (bestDistances.get(stepB)!= null) ? bestDistances.get(stepB) : 0;
-        
-        if (a < b) {
-            return -1;
+        double a = getMetric(stepA, stepA.getUvValue());
+        double b = getMetric(stepB, stepB.getUvValue());
+
+
+        if (a < b)
+        {
+          return -1;
         }
-        if (b < a) {
-            return +1;
+        if (b < a)
+        {
+          return +1;
         }
         return 0;
     }
+
+    /**
+     * @param nodeA the node to compare the distance for
+     * @return the distance
+     */
+    private double getMetric(final Node nodeA, double uv) {
+        double dist = (linearWeight(0)*uv) + (linearWeight(1)* Math.pow(10, 5) * Coordinate.distance(nodeA.getLatitude(), nodeA.getLongitude(),
+                                       this.targetNode.getLatitude(), this.targetNode.getLongitude()));
+//        System.out.println("Node ID : " + nodeA.getId() + " Dist : " +  Coordinate.distance(nodeA.getLatitude(), nodeA.getLongitude(),
+//                this.targetNode.getLatitude(), this.targetNode.getLongitude()) + " UV : " + uv );
+        return dist;
+        
+    }
+    
+    private Double linearWeight(int i)
+    {
+        switch (i)
+        {
+        case 0:
+            return 0.05;
+        case 1:
+            return 0.95;
+        default:
+            return (double) 0;
+        }
+    }
+
 }
