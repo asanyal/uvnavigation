@@ -41,29 +41,29 @@ EXPERIMENT 1:
 Corner of Ophir and Veteran -- Corner of Levering and Glenrock
 In the run configuration for Traveling-Salesman:
 
-import <path to ucla-uv2.osm>
+import path_to_ucla-uv2.osm>
 route -gpx route.gpx [34.0689618,-118.4549004] [34.066308,-118.450813]
 
-import <path to ucla-uv3.osm>
+import path_to_ucla-uv3.osm
 route -gpx route.gpx [34.0689618,-118.4549004] [34.066308,-118.450813]
 
 
 EXPERIMENT 2:
 Corner of Malcolm and Manning -- A point on Glenmont
 
-import <path to ucla-uv2.osm>
+import path_to_ucla-uv2.osm
 route -gpx route.gpx [34.0660665,-118.4385079] [34.0654861,-118.4365909]
 
-import <path to ucla-uv3.osm>
+import path_to_ucla-uv3.osm
 route -gpx route.gpx [34.0660665,-118.4385079] [34.0654861,-118.4365909]
 
 
 EXPERIMENT 3:
 Corner of Hilgard and Manning -- A point on Le Conte
 
-import <path to ucla-uv2.osm>
+import path_to_ucla-uv2.osm
 route -gpx route.gpx [34.0666168,-118.4395786] [34.0644844,-118.4371181]
 
-import <path to ucla-uv3.osm>
+import path_to_ucla-uv3.osm
 route -gpx route.gpx [34.0666168,-118.4395786] [34.0644844,-118.4371181]
 
