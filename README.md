@@ -26,15 +26,16 @@ The following are the project Dependencies:
 3. traveling-salesman - depends on osmnavigation.jar. Add this to it's build path.
 
 To run the project we follow the following steps:
-1. build libosm
-2. build osmnavigation
-3. build traveling-salesman
+1. Build osmosis-core
+2. build libosm
+3. build osmnavigation
+4. build traveling-salesman
 
-4. Run traveling-salesman using the following commands
+5. Run traveling-salesman using the following commands
 import : import <path to the OSM file>
 route : route -gpx <filename.gpx> [lat1,long1] [lat2,long2]
 
-
+We have 3 routing experiments to show how the navigation works.
 
 EXPERIMENT 1:
 Corner of Ophir and Veteran -- Corner of Levering and Glenrock
