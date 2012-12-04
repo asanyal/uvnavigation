@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<project name="osmNavigation" default="dist" basedir=""  xmlns:cs="antlib:com.puppycrawl.tools.checkstyle">
+
+
+  <property name="lib.dir.libosm" value="../libosm"/>
+  <property name="lib.dir" value="lib"/>
+  <property name="images.dir" value="images"/>
+  <property name="dist_dir" value="dist"/>
+  <property name="src.dir" value="src"/>
+  <property name="src.dir.tests" value="test/unit"/>
+  <property name="classes.dir" value="classes"/>
+  <property name="classes.dir.tests" value="classes.tests"/>
+  <property name="doc.testreports.dir" value="doc/testReports"/>
+
+  <property file="src/org/openstreetmap/travelingsalesman/navigation/OsmNavigationConfigSectionRB.properties"/>
+
+
+  <!-- ================================================================== -->
+  <!-- Build properties -->
+  <!-- ================================================================== -->
+
+
+
+  <path id="class.path">
+     <pathelement location="${lib.dir.libosm}/dist/libosm.jar"/>
+     <pathelement location="${lib.dir}/RXTXcomm.jar"/>
+  	 <pathelement location="${lib.dir}/speechd-cvs-20090321.jar"/>
+  </path>
+
+  <path id="class.path.tests">
+    <path refid="class.path"/>
+    <pathelement location="${lib.dir.libosm}/lib/junit-4.4.jar"/>
+    <pathelement location="${classes.dir}"/>
+  </path>
+
+
+  <target name="clean">
+    <delete dir="${classes.dir}"/>
+    <delete dir="${classes.dir.tests}"/>
+    <delete dir="${dist_dir}"/>
+  </target>
+
+
+  <target name="javadoc">
+
+    <mkdir dir="../doc"/>
+    <mkdir dir="../doc/javadoc"/>
+
+      <javadoc packagenames="*"
+               classpathref="class.path"
+               excludepackagenames="java.*"
+               defaultexcludes="yes"
+               destdir="doc/javadoc"
+               author="true"
+               version="true"
+               use="true"
+               source="1.6"
+               windowtitle="osmNavigation"
+               encoding="ISO8859-15">
+        <doctitle><![CDATA[<h1>Lib-OSM</h1>]]></doctitle>
+        <bottom><![CDATA[<i>Copyright &#169; 2007 Wolschon Softwaredesign und Beratung.</i>]]></bottom>
+        <tag name="todo" scope="all" description="&gt;b&lt;To do:&gt;/b&lt;"/>
+        <packageset dir="${src.dir}" defaultexcludes="yes"/>
+        <packageset dir="${lib.dir.libosm}/src" defaultexcludes="yes"/>
+        <packageset dir="../Osmosis/src" defaultexcludes="yes"/>
+      </javadoc>
+<!--      <taskdef name="checkstyle" classname="com.puppycrawl.tools.checkstyle.CheckStyleTask"/> -->
+      <cs:checkstyle config="checkstyle_config.xml">
+        <fileset dir="${src.dir}" includes="**/*.java"/>
+        <formatter type="plain"/>
+        <formatter type="xml" toFile="doc/checkstyle_errors.xml"/>
+      </cs:checkstyle>
+  </target>
+
+  <target name="compile" depends="">
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${classes.dir.tests}"/>
+
+
+    <!-- compile classes-->
+      <javac srcdir="${src.dir}"
+           destdir="${classes.dir}"
+           target="1.6"
+           source="1.6"
+           classpathref="class.path"
+           encoding="ISO8859-15"
+           debug="false"/>
+    <copy todir="${classes.dir}">
+      <fileset dir="${src.dir}">
+      	<exclude name="**/*.java"/>
+      	<exclude name="**/*.pdf"/>
+      	<exclude name="**/*.doc"/>
+      	<exclude name="org/openstreetmap/travelingsalesman/trafficblocks/tmc/TMC-Testdata/**"/>
+      </fileset>
+<!--      <fileset dir="${images.dir}" excludes="**/*.png"/> -->
+    </copy>
+
+    <!-- compile tests -->
+      <javac srcdir="${src.dir.tests}"
+           destdir="${classes.dir.tests}"
+           target="1.6"
+           source="1.6"
+           classpathref="class.path.tests"
+           encoding="ISO8859-15"
+           debug="true"/>
+    <copy todir="${classes.dir.tests}">
+      <fileset dir="${src.dir.tests}" excludes="**/*.java"/>
+    </copy>
+
+   <!-- unzip libs to build a fat jar -->
+    <unzip dest="${classes.dir}">
+      <patternset>
+        <exclude name="META-INF/*"/>
+      </patternset>
+      <fileset dir="${lib.dir.libosm}/dist">
+        <include name="libosm.jar"/>
+      </fileset>
+      <fileset dir=".">
+        <include name="${lib.dir}/RXTXcomm.jar"/>
+      	<include name="${lib.dir}/speechd-cvs-20090321.jar"/>
+      </fileset>
+     </unzip>
+
+
+  </target>
+
+
+  <target name="tests"
+          depends="compile"
+          description="Run the automatic unit-tests">
+
+    <mkdir dir="${doc.testreports.dir}"/>
+
+    <junit haltonfailure="true">
+      <formatter type="plain"/>
+
+      <classpath>
+        <path refid="class.path.tests"/>
+        <pathelement  path="${classes.dir.tests}"/>
+      </classpath>
+
+      <batchtest fork="yes"
+                 todir="${doc.testreports.dir}">
+        <fileset dir="${src.dir.tests}">
+          <include name="**/*Test*.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="makejar" depends="tests">
+    <mkdir dir="${dist_dir}"/>
+    <jar destfile="${dist_dir}/osmnavigation.jar" basedir="${classes.dir}">
+        <fileset dir="${lib.dir}">
+          <include name="native/**"/>
+        </fileset>
+        <fileset dir="${images.dir}/..">
+          <include name="${images.dir}/**"/>
+        </fileset>
+    </jar>
+  	<copy file="${dist_dir}/osmnavigation.jar"
+  		tofile="${dist_dir}/osmnavigation-${osmnavigation.version}.jar"></copy>
+  </target>
+
+
+  <target name="dist"
+        depends="makejar"
+        description="make all the distribution's jar-files">
+  </target>
+
+  <target name="libosm" description="call the build-file of libosm">
+    <ant antfile="${lib.dir.libosm}/build.xml" target="dist" dir="${lib.dir.libosm}/"/>
+  </target>
+
+  <target name="distrecursive"
+        depends="libosm, makejar"
+        description="make all the distribution's jar-files after making libosm">
+  </target>
+
+
+  <!-- =============== these tasks are only for the maintainer ============== -->
+
+  <target name="uploaddist"
+          description="make jars and upload them to sourceforge. This is only for the maintainer">
+
+    <echo message="uploaddist on OSMNavigation ${osmnavigation.version} starting"/>
+
+    <ant antfile="${lib.dir.libosm}/build.xml" target="uploaddist" dir="${lib.dir.libosm}"/>
+    <echo message="uploaddist on OSMNavigation ${osmnavigation.version} continuing"/>
+    <antcall target="dist"/>
+    <antcall target="javadoc"/>
+
+    <signjar jar="${dist_dir}/osmnavigation.jar" keystore="../../.gnupg/java_keystore" storepass="${keystorepass}" keypass="${keypass}"
+             signedjar="${dist_dir}/osmnavigation-${osmnavigation.version}.signed.jar" alias="MarcusWolschon"/>
+    <exec dir="${dist_dir}"
+         executable="gpg" searchpath="true">
+         <arg line=" --default-key 4DD9D1C4 --detach-sign ${dist_dir}/osmnavigation-${osmnavigation.version}.signed.jar"/>
+    </exec>
+    <move fromfile="${dist_dir}/osmnavigation-${/osmnavigation.version}.signed.jar.sig" tofile="${dist_dir}/osmnavigation-${/osmnavigation.version}.signed.jar.gpg.sig"/>
+
+    <echo message="uploaddist on OSMNavigation ${osmnavigation.version} uploading"/>
+
+     <scp file="${dist_dir}/osmnavigation-${osmnavigation.version}.signed.jar"
+         todir="marcuswolschon@travelingsales.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/"
+       keyfile="/home/fox/.ssh/id_dsa"
+       passphrase="${sshpass}"/>
+<!--     <scp todir="marcuswolschon@travelingsales.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/javadoc/osmnavigation/"
+          keyfile="/home/fox/.ssh/id_dsa"
+          passphrase="${sshpass}">
+       <fileset dir="doc/javadoc"/>
+     </scp>-->
+   <exec dir="doc"
+         executable="svn" searchpath="true">
+         <arg line='ci -m "new javadoc generated"'/>
+   </exec>
+
+  </target>
+
+
+</project>

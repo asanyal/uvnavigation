@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6
+END
+EntityByTypeComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntityByTypeComparator.java
+END
+ChangeForStreamableApplierComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeForStreamableApplierComparator.java
+END
+TagSorterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/TagSorterFactory.java
+END
+EntitySorterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntitySorterFactory.java
+END
+SortedDeltaChangePipeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/SortedDeltaChangePipeValidator.java
+END
+EntitySubClassComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntitySubClassComparator.java
+END
+EntityByVersionComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntityByVersionComparator.java
+END
+EntityContainerComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntityContainerComparator.java
+END
+ChangeTagSorterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeTagSorterFactory.java
+END
+TagSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/TagSorter.java
+END
+EntitySorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntitySorter.java
+END
+SortedDuplicateEntityPipeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/SortedDuplicateEntityPipeValidator.java
+END
+SortedHistoryChangePipeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/SortedHistoryChangePipeValidator.java
+END
+ChangeSorterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeSorterFactory.java
+END
+EntityByIdComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntityByIdComparator.java
+END
+ChangeTagSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeTagSorter.java
+END
+StackableComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/StackableComparator.java
+END
+SortedEntityPipeValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/SortedEntityPipeValidator.java
+END
+EntityByTypeThenIdThenVersionComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntityByTypeThenIdThenVersionComparator.java
+END
+ChangeSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeSorter.java
+END
+EntityByTypeThenIdComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/EntityByTypeThenIdComparator.java
+END
+ChangeForSeekableApplierComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeForSeekableApplierComparator.java
+END
+ChangeAsEntityComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/sort/v0_6/ChangeAsEntityComparator.java
+END

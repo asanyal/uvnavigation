@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+<trkpt lat="34.0670001" lon="-118.4556071" >
+<name>Node on 'Levering Avenue'</name>
+<cmt>osm-id 1225429472</cmt>
+<desc>osm-id 1225429472</desc>
+</trkpt>
+<trkpt lat="34.0668224" lon="-118.45473" >
+<name>corner   'Veteran Avenue' 'Levering Avenue'</name>
+<cmt>osm-id 122584764</cmt>
+<desc>osm-id 122584764</desc>
+</trkpt>
+<trkpt lat="34.0684249" lon="-118.4548591" >
+<name>corner   'Veteran Avenue' 'Ophir Drive'</name>
+<cmt>osm-id 122584755</cmt>
+<desc>osm-id 122584755</desc>
+</trkpt>
+<trkpt lat="34.0682199" lon="-118.4525628" >
+<name>corner   'Midvale Avenue' 'Ophir Drive'</name>
+<cmt>osm-id 122624739</cmt>
+<desc>osm-id 122624739</desc>
+</trkpt>
+<trkpt lat="34.069615" lon="-118.4525658" >
+<name>corner   'Midvale Avenue' 'Landfair Avenue'</name>
+<cmt>osm-id 1717303826</cmt>
+<desc>osm-id 1717303826</desc>
+</trkpt>
+</trkseg></trk></gpx>

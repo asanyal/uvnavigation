@@ -1,0 +1,84 @@
+Testsuite: org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParserTest
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.916 sec
+------------- Standard Output ---------------
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+INFO: TMC-message received: 1101001100000001(d301)-1000010100100101(8525)-111001010000001(7281)-1000100011100111(88e7) groupCode=8 PI=d301
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser decodePI
+FINE: piCode=d301= (German, OEffentlich-rechtlich)state=undefined code-(supranational)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+FINER: Group is 8A
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE:  x= 101
+ x4= false (true=tuning info or future use)
+ x3= false (true=single group message)
+ y15= false (true=first block of multi group message)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message - groupSequenceIndicator=3 continuityIndex=5
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+INFO: TMC-message received: 1101001100000001(d301)-1000010100100110(8526)-10000000(80)-0(0) groupCode=8 PI=d301
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser decodePI
+FINE: piCode=d301= (German, OEffentlich-rechtlich)state=undefined code-(supranational)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+FINER: Group is 8A
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE:  x= 110
+ x4= false (true=tuning info or future use)
+ x3= false (true=single group message)
+ y15= false (true=first block of multi group message)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message - groupSequenceIndicator=0 continuityIndex=6
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+INFO: TMC-message received: 1101001100000001(d301)-1000010100100011(8523)-1100001010011000(c298)-1001101110001000(9b88) groupCode=8 PI=d301
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser decodePI
+FINE: piCode=d301= (German, OEffentlich-rechtlich)state=undefined code-(supranational)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+FINER: Group is 8A
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE:  x= 11
+ x4= false (true=tuning info or future use)
+ x3= false (true=single group message)
+ y15= true (true=first block of multi group message)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message - groupSequenceIndicator=0 continuityIndex=3
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message - first block
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.TMCEventFactory addLocationName
+FINE: Location -1.-1.39816 not in tmclocations.properties
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.TMCEventFactory addExtendedLocation
+FINE: Location -1.-1.39816 not in tmclocations.properties
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.TMCEventFactory addExtendedExtend
+FINE: Next location after -1.-1.39816 not in tmclocations.properties
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message: 
+ event   =  ("carriageway closed")
+
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+INFO: TMC-message received: 1101001100000001(d301)-1000010100100101(8525)-10111010010110(2e96)-100010001000001(4441) groupCode=8 PI=d301
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser decodePI
+FINE: piCode=d301= (German, OEffentlich-rechtlich)state=undefined code-(supranational)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+FINER: Group is 8A
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE:  x= 101
+ x4= false (true=tuning info or future use)
+ x3= false (true=single group message)
+ y15= false (true=first block of multi group message)
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message
+Dec 3, 2012 2:41:15 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser handleGroup8A
+FINE: type(A8) multiGroup-message - groupSequenceIndicator=2 continuityIndex=5
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Dec 3, 2012 2:41:14 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.RDSTMCParser tmcBlockReceived
+INFO: TMC-message received: 1101100100000100(d904)-1000010100101000(8528)-10000010000011(2083)-11000011101010(30ea) groupCode=8 PI=d904
+------------- ---------------- ---------------
+
+Testcase: testTmcBlockReceived took 0.898 sec
+Testcase: testRDSBlockReceived took 0.014 sec
+Testcase: testHandleGroup8A took 0.001 sec

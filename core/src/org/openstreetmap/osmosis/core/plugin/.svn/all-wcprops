@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/plugin
+END
+PluginLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/plugin/PluginLoader.java
+END
+CorePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/plugin/CorePlugin.java
+END
+plugin.xml.template
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/plugin/plugin.xml.template
+END

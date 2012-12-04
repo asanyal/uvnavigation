@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<project name="TravelingSalesman" default="dist" basedir="" xmlns:cs="antlib:com.puppycrawl.tools.checkstyle">
+
+
+  <property name="lib.dir.osmnavigation" value="../osmnavigation"/>
+  <property name="lib.dir.libosm"  value="../libosm"/>
+  <property name="images.dir" value="images"/>
+  <property name="lib.dir" value="lib"/>
+  <property name="dist_dir" value="dist"/>
+  <property name="src.dir" value="src"/>
+  <property name="src.dir.tests" value="test/unit"/>
+  <property name="classes.dir" value="classes"/>
+  <property name="classes.dir.tests" value="classes.tests"/>
+  <property name="doc.testreports.dir" value="doc/testReports"/>
+
+  <property file="../../.gnupg/java_keystore.properties"/>
+  <property file="src/org/openstreetmap/travelingsalesman/gui/MainFrameRB.properties"/>
+
+  <!-- ================================================================== -->
+  <!-- Build properties -->
+  <!-- ================================================================== -->
+
+
+
+  <path id="class.path">
+     <pathelement location="${lib.dir.osmnavigation}/dist/osmnavigation.jar"/>
+     <pathelement location="${lib.dir}/l2fprod-common-tasks.jar"/>
+  </path>
+
+  <path id="class.path.tests">
+    <path refid="class.path"/>
+    <pathelement location="${lib.dir.libosm}/lib/junit-4.4.jar"/>
+    <pathelement location="${classes.dir}"/>
+  </path>
+
+
+  <target name="clean">
+    <delete dir="${classes.dir}"/>
+    <delete dir="${classes.dir.tests}"/>
+    <delete dir="${dist_dir}"/>
+  </target>
+
+
+  <target name="javadoc">
+
+    <mkdir dir="../doc"/>
+    <mkdir dir="../doc/javadoc"/>
+
+      <javadoc packagenames="*"
+               classpathref="class.path"
+               excludepackagenames="java.*"
+               defaultexcludes="yes"
+               destdir="doc/javadoc"
+               author="true"
+               version="true"
+               use="true"
+               source="1.6"
+               windowtitle="Traveling Salesman"
+               encoding="ISO8859-15">
+        <doctitle><![CDATA[<h1>Traveling Salesman</h1>]]></doctitle>
+        <bottom><![CDATA[<i>Copyright &#169; 2007 Wolschon Softwaredesign und Beratung.</i>]]></bottom>
+        <tag name="todo" scope="all" description="&gt;b&lt;To do:&gt;/b&lt;"/>
+	<packageset dir="${src.dir}" defaultexcludes="yes"/>
+	<packageset dir="${lib.dir.libosm}/src" defaultexcludes="yes"/>
+	<packageset dir="${lib.dir.osmnavigation}/src" defaultexcludes="yes"/>
+      </javadoc>
+<!--      <taskdef name="checkstyle" classname="com.puppycrawl.tools.checkstyle.CheckStyleTask"/>  
+      <cs:checkstyle config="checkstyle_config.xml">
+        <fileset dir="${src.dir}" includes="**/*.java"/>
+        <formatter type="plain"/>
+        <formatter type="xml" toFile="doc/checkstyle_errors.xml"/>
+      </cs:checkstyle>  -->
+  </target>
+
+  <target name="compile" depends="">
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${classes.dir.tests}"/>
+
+
+    <!-- compile classes-->
+      <javac srcdir="${src.dir}"
+           destdir="${classes.dir}"
+           target="1.6"
+           source="1.6"
+           classpathref="class.path"
+           encoding="ISO8859-15"
+           debug="true"/>
+    <copy todir="${classes.dir}">
+      <fileset dir="${src.dir}" excludes="**/*.java"/>
+    </copy>
+
+    <!-- compile tests -->
+      <javac srcdir="${src.dir.tests}"
+           destdir="${classes.dir.tests}"
+           target="1.6"
+           source="1.6"
+           classpathref="class.path.tests"
+           encoding="ISO8859-15"
+           debug="true"/>
+    <copy todir="${classes.dir.tests}">
+      <fileset dir="${src.dir.tests}" excludes="**/*.java"/>
+    </copy>
+
+   <!-- unzip libs to build a fat jar -->
+    <unzip dest="${classes.dir}">
+      <patternset>
+        <exclude name="META-INF/*"/>
+      </patternset>
+      <fileset dir="${lib.dir.osmnavigation}/dist">
+        <include name="osmnavigation.jar"/>
+      </fileset>
+      <fileset dir="${lib.dir}">
+        <include name="l2fprod-common-tasks.jar"/>
+      </fileset>
+     </unzip>
+
+
+  </target>
+
+
+  <target name="tests"
+          depends="compile"
+          description="Run the automatic unit-tests">
+
+    <mkdir dir="${doc.testreports.dir}"/>
+
+    <junit haltonfailure="true">
+      <formatter type="plain"/>
+
+      <classpath>
+        <path refid="class.path.tests"/>
+        <pathelement  path="${classes.dir.tests}"/>
+      </classpath>
+
+      <batchtest fork="yes"
+                 todir="${doc.testreports.dir}">
+        <fileset dir="${src.dir.tests}">
+          <include name="**/*Test*.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="makejar" depends="tests">
+    <mkdir dir="${dist_dir}"/>
+
+    <jar destfile="${dist_dir}/traveling_salesman-${Main.Version}.jar" basedir="${classes.dir}"
+         manifest="MANIFEST.MF">
+        <fileset dir="${images.dir}/..">
+          <include name="${images.dir}/**"/>
+        </fileset>
+    </jar>
+  </target>
+
+
+  <target name="dist"
+        depends="makejar"
+        description="make all the distribution's jar-files">
+  </target>
+
+  <target name="osmnavigation" description="call the build-file of osmnavigation">
+    <ant antfile="${lib.dir.osmnavigation}/build.xml" target="distrecursive"  dir="${lib.dir.osmnavigation}"/>
+  </target>
+
+
+  <!-- =============== these tasks are only for the maintainer ============== -->
+
+  <target name="distrecursive"
+        depends="osmnavigation, makejar"
+        description="make all the distribution's jar-files after making osmnavigation">
+  </target>
+
+  <target name="uploaddist"
+          description="make jars and upload them to sourceforge. This is only for the maintainer">
+
+    <echo message="uploaddist on Traveling Salesman ${Main.Version} starting."/>
+
+    <ant antfile="${lib.dir.libosm}/build.xml" target="clean" dir="${lib.dir.libosm}/"/>
+    <ant antfile="${lib.dir.libosm}/build.xml" target="dist_without_tests" dir="${lib.dir.libosm}/"/>
+
+    <ant antfile="${lib.dir.osmnavigation}/build.xml" target="clean" dir="${lib.dir.osmnavigation}"/>
+    <ant antfile="${lib.dir.osmnavigation}/build.xml" target="dist" dir="${lib.dir.osmnavigation}"/>
+    <echo message="uploaddist on Traveling Salesman ${Main.Version} continuing"/>
+
+    <antcall target="clean"/>
+    <antcall target="dist"/>
+    <antcall target="javadoc"/>
+
+    <echo message="uploaddist on Traveling Salesman ${Main.Version} uploading"/>
+
+    <signjar jar="${dist_dir}/traveling_salesman-${Main.Version}.jar"
+             keystore="../../.gnupg/thawte_codesign_keystore.ks"
+             storepass="${keystorepass}"
+             keypass="${keypass}"
+             signedjar="${dist_dir}/traveling_salesman-${Main.Version}.signed.jar" alias="thawte_codesign"
+    />
+   <exec dir="${dist_dir}"
+         executable="gpg" searchpath="true">
+	 <arg line=" --default-key '4DD9D1C4!' --detach-sign traveling_salesman-${Main.Version}.signed.jar"/>
+   </exec>
+   <move file="${dist_dir}/traveling_salesman-${Main.Version}.signed.jar.sig"
+         tofile  ="${dist_dir}/traveling_salesman-${Main.Version}.signed.jar.gpg.sig"/>
+             <!--signedjar="${dist_dir}/traveling_salesman-${Main.Version}.signed.jar" alias="MarcusWolschon" -->
+
+     <!-- ********* upload executabe jar ******* -->
+     <scp file="${dist_dir}/traveling_salesman-${Main.Version}.signed.jar"
+         todir="marcuswolschon,travelingsales@web.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/"
+       keyfile="/home/fox/.ssh/id_dsa"
+       passphrase="${sshpass}"/>
+
+     <!-- ********* upload GPG-signature for executabe jar ******* -->
+     <scp file="${dist_dir}/traveling_salesman-${Main.Version}.signed.jar.gpg.sig"
+         todir="marcuswolschon,travelingsales@web.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/"
+       keyfile="/home/fox/.ssh/id_dsa"
+       passphrase="${sshpass}"/>
+
+     <!-- ********* upload jnlp for executable jar ******* -->
+     <copy file="ts.jnlp" tofile="${dist_dir}/ts-${Main.Version}.jnlp"/>
+     <replace file="${dist_dir}/ts-${Main.Version}.jnlp"
+              propertyFile="src/org/openstreetmap/travelingsalesman/gui/MainFrameRB.properties">
+        <replacefilter
+           token="VERSION"
+           property="Main.Version"/>
+     </replace>
+     <copy file="${dist_dir}/ts-${Main.Version}.jnlp" tofile="${dist_dir}/ts.jnlp"/>
+     <scp file="${dist_dir}/ts-${Main.Version}.jnlp"
+         todir="marcuswolschon,travelingsales@web.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/"
+       keyfile="/home/fox/.ssh/id_dsa"
+       passphrase="${sshpass}"/>
+     <scp file="${dist_dir}/ts.jnlp"
+         todir="marcuswolschon,travelingsales@web.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/"
+       keyfile="/home/fox/.ssh/id_dsa"
+       passphrase="${sshpass}"/>
+
+     <!-- ********* upload javadoc ******* -->
+     <echo message="uploading javadoc"/>
+     <scp todir="marcuswolschon,travelingsales@web.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/javadoc/traveling_salesman/"
+          keyfile="/home/fox/.ssh/id_dsa"
+          passphrase="${sshpass}">
+       <fileset dir="doc/javadoc"/>
+     </scp>
+   <exec dir="doc"
+         executable="svn" searchpath="true">
+	 <arg line='ci -m "new javadoc generated"'/>
+   </exec>
+  </target>
+
+</project>

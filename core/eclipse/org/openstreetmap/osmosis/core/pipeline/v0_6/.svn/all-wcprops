@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6
+END
+SinkManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/SinkManager.java
+END
+ChangeSinkManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/ChangeSinkManager.java
+END
+DatasetSinkManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/DatasetSinkManager.java
+END
+ChangeSinkMultiChangeSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/ChangeSinkMultiChangeSourceManager.java
+END
+SinkRunnableSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/SinkRunnableSourceManager.java
+END
+SinkSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/SinkSourceManager.java
+END
+RunnableSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/RunnableSourceManager.java
+END
+MultiSinkRunnableSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/MultiSinkRunnableSourceManager.java
+END
+ChangeSinkRunnableChangeSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/ChangeSinkRunnableChangeSourceManager.java
+END
+SinkDatasetSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/SinkDatasetSourceManager.java
+END
+DatasetSinkSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/DatasetSinkSourceManager.java
+END
+RunnableDatasetSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/RunnableDatasetSourceManager.java
+END
+RunnableChangeSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/RunnableChangeSourceManager.java
+END
+MultiSinkRunnableChangeSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/MultiSinkRunnableChangeSourceManager.java
+END
+MultiSinkMultiChangeSinkRunnableSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/MultiSinkMultiChangeSinkRunnableSourceManager.java
+END
+SinkMultiSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/SinkMultiSourceManager.java
+END
+ChangeSinkChangeSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/ChangeSinkChangeSourceManager.java
+END
+MultiChangeSinkRunnableChangeSourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/pipeline/v0_6/MultiChangeSinkRunnableChangeSourceManager.java
+END

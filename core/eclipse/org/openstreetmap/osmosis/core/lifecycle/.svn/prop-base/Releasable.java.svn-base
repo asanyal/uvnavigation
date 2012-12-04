@@ -1,0 +1,9 @@
+K 13
+svn:eol-style
+V 6
+native
+K 13
+svn:mergeinfo
+V 122
+/applications/utils/osmosis/branches/breakup/core/src/org/openstreetmap/osmosis/core/lifecycle/Releasable.java:21683-21924
+END

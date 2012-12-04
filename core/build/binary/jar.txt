@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_26-b03-383-11A511c (Apple Inc.)
+Main-Class: org.openstreetmap.osmosis.core.Osmosis
+Built-By: atin
+Implementation-Title: Osmosis Library
+Implementation-Version: SNAPSHOT-r28826M (November 30 2012)
+Implementation-Vendor: Brett Henderson
+

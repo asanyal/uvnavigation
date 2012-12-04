@@ -1,0 +1,8 @@
+Testsuite: org.openstreetmap.osmosis.core.cli.CommandLineParserTest
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.194 sec
+
+Testcase: testQuietOption took 0.003 sec
+Testcase: testVerboseOption took 0 sec
+Testcase: testQuietAndVerboseOption took 0 sec
+Testcase: testPluginOption took 0 sec
+Testcase: testUnknownOption took 0.001 sec

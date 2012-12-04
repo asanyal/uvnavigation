@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle.win32_1.6.4.v200904062334/gwt-windows-1.6.4/gwt-user.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/com.google.gwt.eclipse.sdkbundle.win32_1.6.4.v200904062334/gwt-windows-1.6.4/gwt-dev-windows.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,7 @@
+Testsuite: org.openstreetmap.osmosis.core.domain.v0_6.OsmUserTest
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+
+Testcase: testGetInstanceNoUser took 0 sec
+Testcase: testGetInstancePreventsNullUser took 0 sec
+Testcase: testGetInstancePreventsNoneUser took 0 sec
+Testcase: testGetInstanceFromStore took 0.003 sec

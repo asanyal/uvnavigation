@@ -1,0 +1,11 @@
+Travelings-Salesman is a Route-Planner and GPS-Navigator using 
+the map-data from OpenStreetMap via LibOSM.
+
+It constists of:
+ * travelingSalesman - a standalong navigation-program for Laptops.
+ * osmnavigation - a library for developing navugation and route-planning -applications
+ * libosm - a library to work with OpenStreetMap-data.
+
+{{{http://travelingsales.sourceforge.net/ts.jnlp}Start Traveling-Salesmn}} (using Java WebStart)
+
+You can find more about it, in the {{http://travelingsales.wiki.sourceforge.net/}WIKI}}.

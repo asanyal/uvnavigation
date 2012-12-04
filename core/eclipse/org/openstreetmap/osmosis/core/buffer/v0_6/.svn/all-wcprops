@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/buffer/v0_6
+END
+ChangeBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/buffer/v0_6/ChangeBuffer.java
+END
+EntityBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/buffer/v0_6/EntityBuffer.java
+END
+ChangeBufferFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/buffer/v0_6/ChangeBufferFactory.java
+END
+EntityBufferFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/buffer/v0_6/EntityBufferFactory.java
+END

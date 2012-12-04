@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/common
+END
+SimpleTimestampContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/common/SimpleTimestampContainer.java
+END
+TimestampContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/common/TimestampContainer.java
+END
+UnparsedTimestampContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/common/UnparsedTimestampContainer.java
+END
+TimestampFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/common/TimestampFormat.java
+END

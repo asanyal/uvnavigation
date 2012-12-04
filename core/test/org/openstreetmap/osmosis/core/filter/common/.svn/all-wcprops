@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/org/openstreetmap/osmosis/core/filter/common
+END
+BitSetIdTrackerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/org/openstreetmap/osmosis/core/filter/common/BitSetIdTrackerTest.java
+END
+IdTrackerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/org/openstreetmap/osmosis/core/filter/common/IdTrackerBase.java
+END
+ListIdTrackerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/org/openstreetmap/osmosis/core/filter/common/ListIdTrackerTest.java
+END
+DynamicIdTrackerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/org/openstreetmap/osmosis/core/filter/common/DynamicIdTrackerTest.java
+END

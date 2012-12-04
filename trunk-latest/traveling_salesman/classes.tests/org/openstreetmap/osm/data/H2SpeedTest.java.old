@@ -1,0 +1,65 @@
+///**
+// * 
+// */
+//package org.openstreetmap.osm.data;
+//
+//
+//import java.io.File;
+//import java.util.GregorianCalendar;
+//
+//import org.openstreetmap.osm.data.h2.H2DataSet;
+//import org.openstreetmap.travelingsalesman.actions.LoadMapFileActionListener;
+//
+///**
+// * (c) 2007 by <a href="http://Wolschon.biz>Wolschon Softwaredesign und Beratung</a>.<br/>
+// * Project: libosm<br/>
+// * H2SpeedTest.java<br/>
+// * created: 23.11.2009 <br/>
+//s *<br/><br/>
+// * Load a given map into an H2DataSet to test the speed of
+// * importing with different optimizations added.
+// * @author <a href="mailto:Marcus@Wolschon.biz">Marcus Wolschon</a>
+// */
+//public final class H2SpeedTest {
+//
+//    /**
+//     * No constructor.
+//     */
+//    private H2SpeedTest() {
+//    }
+//
+//    /**
+//     * Test method for {@link org.openstreetmap.osm.data.h2.H2DataSet#H2DataSet(java.io.File)}.
+//     * @param args ignored
+//     */
+//    public static void main(final String[] args) {
+//        try {
+//            GregorianCalendar now = new GregorianCalendar();
+//            File testDir = new File("d:\\H2SpeedTest.temp." + now.get(GregorianCalendar.YEAR)
+//                    + "-"
+//                    + now.get(GregorianCalendar.MONTH)
+//                    + "-"
+//                    + now.get(GregorianCalendar.DATE)
+//                    + "_"
+//                    + now.get(GregorianCalendar.HOUR_OF_DAY)
+//                    + "h"
+//                    + now.get(GregorianCalendar.MINUTE)
+//                    + "m"
+//                    + now.get(GregorianCalendar.SECOND)
+//                    + "s");
+//            testDir.mkdirs();
+//            H2DataSet mySubject = new H2DataSet(testDir);
+//            File testData = new File("D:\\Data\\downloads\\osm\\hamburg.osm.bz2");
+//            System.out.println("Benchmark starting. Testdata=" + testData.getAbsolutePath());
+//            long start = System.currentTimeMillis();
+//            LoadMapFileActionListener.loadMapFile(null, testData, null, null, mySubject);
+//            long end = System.currentTimeMillis();
+//            long length = end - start;
+//            mySubject.shutdown();
+//            System.out.println("The import took us " + length + " milliseconds");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test/unit"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3.8.1"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/libosm"/>
+	<classpathentry kind="lib" path="lib/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="lib/speechd-cvs-20090321.jar" sourcepath="lib/speechd-java/src"/>
+	<classpathentry kind="lib" path="/Users/atin/Dropbox/Navigation/trunk-latest/libosm/dist/libosm.jar"/>
+	<classpathentry kind="lib" path="/Users/atin/Dropbox/Navigation/trunk-latest/libosm/dist/libosm-2.5.2-RC1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

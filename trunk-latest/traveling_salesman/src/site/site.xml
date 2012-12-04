@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="travelingSalesman - navigator">
+<!--  <bannerLeft>
+    <name>LibOSM</name>
+    <src>http://maven.apache.org/images/apache-maven-project.png</src>
+    <href>http://maven.apache.org/</href>
+  </bannerLeft>
+  <bannerRight>
+    <src>http://maven.apache.org/images/maven-small.gif</src>
+  </bannerRight> -->
+  <body>
+    <links>
+      <item name="Traveling Salesman" href="http://travelingsales.sourceforge.net/" />
+      <item name="our WIKI" href="http://travelingsales.wiki.sourceforge.net/"/>
+    </links>
+
+    <menu name="Traveling Salesman - Navigator">
+      <item name="part of Traveling Salesman" href="http://travelingsales.sourceforge.net/" />
+      <item name="Introduction" href="http://travelingsales.wiki.sourceforge.net/Traveling+Salesman"/>
+      <item name="our WIKI" href="http://travelingsales.wiki.sourceforge.net/"/>
+      <item name="Download" href="https://sourceforge.net/project/showfiles.php?group_id%3D203597"/>
+<!--      <item name="Release Notes" href="release-notes.html" />
+      <item name="General Information" href="about.html"/>
+      <item name="Road Map" href="roadmap.html" />-->
+    </menu>
+
+    <menu name="contributing">
+      <item name="Tasks" href="http://sourceforge.net/pm/task.php?group_project_id%3D53642&amp;group_id%3D203597&amp;func%3Dbrowse"/>
+      <item name="Bugs"  href="http://sourceforge.net/tracker/?group_id%3D203597&amp;atid%3D986231"/>
+      <item name="Feature Requests" href="http://sourceforge.net/tracker/?group_id%3D203597&amp;atid%3D986234"/>
+      <item name="Sourcecode" href="http://sourceforge.net/tracker/?group_id%3D203597&amp;atid%3D986234"/>
+    </menu>
+    <menu ref="reports"/>
+
+  </body>
+</project>

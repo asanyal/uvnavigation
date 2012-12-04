@@ -1,0 +1,3 @@
+#!/bin/bash
+scp -r ./* marcuswolschon@travelingsales.sourceforge.net:/home/groups/t/tr/travelingsales/htdocs/javadoc/traveling_salesman/
+svn ci -m "new javadoc generated"

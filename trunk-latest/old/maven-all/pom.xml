@@ -1,0 +1,158 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.sourceforge.travelingsales.base</groupId>
+  <artifactId>base</artifactId>
+  <packaging>pom</packaging>
+  <version>2.3.10-SNAPSHOT</version>
+  <name>TravelingSalesman</name>
+  <url>http://travelingsales.sourceforge.net</url>
+
+
+
+  <!-- reports that are to be generated for all sub-projects-->
+  <reporting>
+    <plugins>
+
+      <!-- genrate javadoc -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <tags>
+            <tag>
+              <name>todo</name>
+              <!-- Should be a combination of the letters Xaoptcmf -->
+              <placement>a</placement>
+              <head>&gt;b&lt;To do:&gt;/b&lt;</head>
+<!--	      <doctitle><![CDATA[<h1>Lib-OSM</h1>]]></doctitle>
+	              <bottom><![CDATA[<i>Copyright &#169; 2007 Wolschon Softwaredesign und Beratung.</i>]]></bottom> -->
+            </tag>
+          </tags>
+        </configuration>
+      </plugin>
+
+      <!-- generate html-pages of cross-linked sources -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <configuration>
+          <linkJavadoc>true</linkJavadoc>
+          <javadocDir>/apidocs</javadocDir>
+        </configuration>
+      </plugin>
+
+      <!-- generate html-output of the checkstyle -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+	<configuration>
+           <configLocation>checkstyle_config.xml</configLocation>
+        </configuration>
+      </plugin>
+
+      <!-- generate a report of the unit-tests and their result -->
+       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.0.1</version>
+      </plugin>
+
+      <!-- generate changelog-reports from SVN -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-changelog-plugin</artifactId>
+	<configuration>
+         <type>range</type>
+         <range>30</range> <!-- show last 30 days -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <!--  -->
+  <distributionManagement>
+    <site>
+      <id>website</id>
+      <url>scp://marcuswolschon@shell.sourceforge.net/home/groups/t/tr/travelingsales/htdocs/all</url>
+    </site>
+  </distributionManagement>
+
+ <licenses>
+  <license>
+    <name>General Public Licence (GPL)</name>
+    <url>http://www.gnu.org/licenses/gpl-3.0.html</url>
+    <distribution>repo</distribution>
+    <comments>GPL Version 3 or newer</comments>
+  </license>
+ </licenses>
+
+ <issueManagement>
+  <system>SourceForge</system>
+  <url>http://sourceforge.net/tracker/?group_id%3D203597&amp;atid%3D986231</url>
+ </issueManagement>
+
+ <developers>
+    <developer>
+      <id>marcuswolschon</id>
+      <name>Marcus Wolschon</name>
+      <email>Marcus@Wolschon.biz</email>
+      <url>http://wolschon.biz</url>
+      <organization>Wolschon Softwaredesign und Beratung</organization>
+      <organizationUrl>http://wolschon.biz</organizationUrl>
+      <roles>
+        <role>maintainer</role>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>+1</timezone>
+      <properties>
+        <picUrl>http://www.wolschon.biz/MarcusWolschon2.jpg</picUrl>
+      </properties>
+    </developer>
+
+    <developer>
+      <id>combbs</id>
+      <name>Oleg Chubaryov</name>
+      <email>combbs@users.sourceforge.net</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+
+    <developer>
+      <id>dinocore</id>
+      <name>Paul Soucy</name>
+      <email>dinocore@users.sourceforge.net</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+
+    <developer>
+      <id>tdad</id>
+      <name>Sven Koehler</name>
+      <email>tdad@users.sourceforge.net</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+
+    <developer>
+      <id>tsoliman</id>
+      <name>Tarek Soliman</name>
+      <email>tsoliman@users.sourceforge.net</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+
+  </developers>
+</project>

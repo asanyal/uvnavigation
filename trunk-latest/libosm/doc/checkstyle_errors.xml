@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="/home/fox/workspace/libosm/src/com/bretth/osmosis/core/xml/v0_5/XmlDownloader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/ConfigurationSection.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/ConfigurationSetting.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/JosmPreferences.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/Plugins/IPlugin.java">
+<error line="36" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/Settings.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/SettingsDialog.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/CachingDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/DBDataSet.java">
+<error line="50" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/DataSetFilter.java">
+<error line="85" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/FileTileDataSet.java">
+<error line="809" column="32" severity="warning" message="Nach &apos;,&apos; folgt kein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/IDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/LoadingDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/MemoryDataSet.java">
+<error line="281" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="334" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/NodeHelper.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/Selector.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/TileCalculator.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/WayHelper.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/Bounds.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/Coordinate.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/EastNorth.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/GpsPoint.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/LatLon.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/PolygonBounds.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/DatabaseContext.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbBaseReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbCurrentNodeReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbCurrentRelationReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbCurrentWayReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedBaseReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedCurrentNodeReader.java">
+<error line="244" column="12" severity="warning" message="Mehr als 7 Parameter." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedCurrentRelationReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedCurrentWayReader.java">
+<error line="245" column="16" severity="warning" message="Mehr als 7 Parameter." source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/Epsg4326.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/Mercator.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/Projection.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/AddressDBPlaceFinder.java">
+<error line="677" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="697" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/AddressPlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/IExtendedPlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/IPlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/IWayPlace.java">
+<error line="7" severity="warning" message="Die Form &apos;.*&apos; für import-Anweisungen sollte vermieden werden - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="10" column="8" severity="warning" message="Nicht benutztes import - java.util.logging.Logger." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="13" column="8" severity="warning" message="Nicht benutztes import - java.beans.PropertyChangeListener." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="14" column="8" severity="warning" message="Nicht benutztes import - java.beans.PropertyChangeSupport." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="16" severity="warning" message="Javadoc-Kommentar fehlt." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="21" column="5" severity="warning" message="Überflüssiger Modifier &apos;public&apos;." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="27" column="5" severity="warning" message="Überflüssiger Modifier &apos;public&apos;." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/InetPlaceFinder.java">
+<error line="92" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/NameHelper.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/NodePlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/Place.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/SimplePlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/WayPlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/WayReferencePlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/AddVisitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/BoundingXYVisitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/DeleteVisitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/Visitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/BoundingBoxDownloader.java">
+<error line="42" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="43" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/DataSetSink.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/FileLoader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/HsqldbDatabaseLoader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/IDatabaseLoader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/MysqlDatabaseLoader.java">
+<error line="390" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="403" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="425" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/Plugins/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/com/bretth/osmosis/core/xml/v0_5/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/package.html">
+</file>
+<file name="/home/fox/workspace/libosm/src/com/bretth/osmosis/core/xml/v0_5/XmlDownloader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/ConfigurationSection.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/ConfigurationSetting.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/JosmPreferences.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/Plugins/IPlugin.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/Settings.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/SettingsDialog.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/CachingDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/DBDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/DataSetFilter.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/FileTileDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/IDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/LoadingDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/MemoryDataSet.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/NodeHelper.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/Selector.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/TileCalculator.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/WayHelper.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/Bounds.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/Coordinate.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/EastNorth.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/GpsPoint.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/LatLon.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/coordinates/PolygonBounds.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/DatabaseContext.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbBaseReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbCurrentNodeReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbCurrentRelationReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/hsqldb/HsqldbCurrentWayReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedBaseReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedCurrentNodeReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedCurrentRelationReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/mysql/ConstrainedCurrentWayReader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/Epsg4326.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/Mercator.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/projection/Projection.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/AddressDBPlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/AddressPlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/IExtendedPlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/IPlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/IWayPlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/InetPlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/NameHelper.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/NodePlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/Place.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/SimplePlaceFinder.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/WayPlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/searching/WayReferencePlace.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/AddVisitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/BoundingXYVisitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/DeleteVisitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/data/visitors/Visitor.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/BoundingBoxDownloader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/DataSetSink.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/FileLoader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/HsqldbDatabaseLoader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/IDatabaseLoader.java">
+</file>
+<file name="/home/fox/workspace/libosm/src/org/openstreetmap/osm/io/MysqlDatabaseLoader.java">
+</file>
+</checkstyle>

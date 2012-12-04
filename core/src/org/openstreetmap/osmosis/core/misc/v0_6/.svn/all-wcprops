@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/misc/v0_6
+END
+NullWriterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/misc/v0_6/NullWriterFactory.java
+END
+NullChangeWriterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/misc/v0_6/NullChangeWriterFactory.java
+END
+NullWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/misc/v0_6/NullWriter.java
+END
+NullChangeWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/misc/v0_6/NullChangeWriter.java
+END

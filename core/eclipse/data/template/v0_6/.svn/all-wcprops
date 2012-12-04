@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/data/template/v0_6
+END
+migration-expected.osm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/data/template/v0_6/migration-expected.osm
+END
+compressor-bzip2-test.osm.bz2
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/data/template/v0_6/compressor-bzip2-test.osm.bz2
+END
+rep-changeset.osc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/data/template/v0_6/rep-changeset.osc
+END
+repdb-authfile.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/data/template/v0_6/repdb-authfile.txt
+END
+migration-expected.osc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/test/data/template/v0_6/migration-expected.osc
+END

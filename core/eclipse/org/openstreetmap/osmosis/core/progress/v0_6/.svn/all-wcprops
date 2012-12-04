@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/progress/v0_6
+END
+EntityProgressLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/progress/v0_6/EntityProgressLogger.java
+END
+ChangeProgressLoggerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/progress/v0_6/ChangeProgressLoggerFactory.java
+END
+EntityProgressLoggerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/progress/v0_6/EntityProgressLoggerFactory.java
+END
+ChangeProgressLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/progress/v0_6/ChangeProgressLogger.java
+END

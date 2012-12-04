@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<project name="osmNavigation" default="dist" basedir=""  xmlns:cs="antlib:com.puppycrawl.tools.checkstyle">
+
+
+  <property name="lib.dir.libosm" value="../libosm/lib"/>
+  <property name="lib.dir.osmnavigation" value="../osmnavigation/lib"/>
+  <property name="lib.dir" value="lib"/>
+  <property name="dist_dir" value="dist"/>
+  <property name="src.dir" value="src"/>
+  <property name="src.dir.tests" value="test/unit"/>
+  <property name="classes.dir" value="classes"/>
+  <property name="classes.dir.tests" value="classes.tests"/>
+  <property name="doc.testreports.dir" value="doc/testReports"/>
+
+
+  <!-- ================================================================== -->
+  <!-- Build properties -->
+  <!-- ================================================================== -->
+
+
+
+  <path id="class.path">
+  	<pathelement location="${lib.dir.libosm}/../dist/libosm.jar"/>
+  	<pathelement location="${lib.dir.libosm}/jpf.jar"/>
+    <pathelement location="${lib.dir.osmnavigation}/../dist/osmnavigation.jar"/>
+  	<pathelement location="${lib.dir}/freetts.jar"/>
+  	<pathelement location="${lib.dir}/jsapi.jar"/>
+  </path>
+
+  <path id="class.path.tests">
+    <path refid="class.path"/>
+    <pathelement location="${lib.dir.libosm}/junit-4.4.jar"/>
+    <pathelement location="${classes.dir}"/>
+  </path>
+
+
+  <target name="clean">
+    <delete dir="${classes.dir}" failonerror="false"/>
+    <delete dir="${classes.dir.tests}" failonerror="false"/>
+    <delete dir="${dist_dir}" failonerror="false"/>
+  </target>
+
+
+  <target name="javadoc">
+
+    <mkdir dir="../doc"/>
+    <mkdir dir="../doc/javadoc"/>
+
+      <javadoc packagenames="*"
+               classpathref="class.path"
+               excludepackagenames="java.*"
+               defaultexcludes="yes"
+               destdir="doc/javadoc"
+               author="true"
+               version="true"
+               use="true"
+               source="1.6"
+               windowtitle="osmNavigation - Speech Pack"
+               encoding="ISO8859-15">
+        <doctitle><![CDATA[<h1>Lib-OSM</h1>]]></doctitle>
+        <bottom><![CDATA[<i>Copyright &#169; 2007 Wolschon Softwaredesign und Beratung.</i>]]></bottom>
+        <tag name="todo" scope="all" description="&gt;b&lt;To do:&gt;/b&lt;"/>
+        <packageset dir="${src.dir}" defaultexcludes="yes"/>
+        <packageset dir="../libosm/src" defaultexcludes="yes"/>
+        <packageset dir="../Osmosis/src" defaultexcludes="yes"/>
+      </javadoc>
+<!--      <taskdef name="checkstyle" classname="com.puppycrawl.tools.checkstyle.CheckStyleTask"/> -->
+      <cs:checkstyle config="checkstyle_config.xml">
+        <fileset dir="${src.dir}" includes="**/*.java"/>
+        <formatter type="plain"/>
+        <formatter type="xml" toFile="doc/checkstyle_errors.xml"/>
+      </cs:checkstyle>
+  </target>
+
+ 	<target name="check_jsapi_jar.isPresent">
+  	        <available file="lib/jsapi.jar" property="jsapi_jar.isPresent"/>
+  	</target>
+  	
+  	<target name="issue_jsapi_warning"
+  	            unless="jsapi_jar.isPresent">
+  	        <echo>
+  	Please extract jsapi.jar by running jsapi.sh or 
+  	jsapi.exe from the lib directory. By doing so you
+  	accept the "Sun Microsystems, Inc. Binary Code License Agreement".
+  	        </echo>
+  	    </target>
+
+  <target name="compile" depends="check_jsapi_jar.isPresent,issue_jsapi_warning"
+      if="jsapi_jar.isPresent">
+    <mkdir dir="${classes.dir}"/>
+    <mkdir dir="${classes.dir.tests}"/>
+
+
+    <!-- compile classes-->
+      <javac srcdir="${src.dir}"
+           destdir="${classes.dir}"
+           target="1.6"
+           source="1.6"
+           classpathref="class.path"
+           encoding="ISO8859-15"
+           debug="true"/>
+    <copy todir="${classes.dir}">
+      <fileset dir="${src.dir}" excludes="**/*.java"/>
+<!--      <fileset dir="${images.dir}" excludes="**/*.png"/> -->
+    </copy>
+
+    <!-- compile tests -->
+      <javac srcdir="${src.dir.tests}"
+           destdir="${classes.dir.tests}"
+           target="1.6"
+           source="1.6"
+           classpathref="class.path.tests"
+           encoding="ISO8859-15"
+           debug="true"/>
+
+   <!-- unzip libs to build a fat jar -->
+    <unzip dest="${classes.dir}">
+      <patternset>
+        <exclude name="META-INF/*"/>
+      	<exclude name="**/internal_voices.txt"/>
+      	<exclude name="**/VoiceManager.class"/>
+      </patternset>
+      <fileset dir="${lib.dir}" includes="*.jar"></fileset>
+     </unzip>
+ 
+  	<copy todir="${dist_dir}">
+ <!-- 		<fileset dir="${lib.dir}" includes="*.jar" excludes="jsapi.jar"></fileset>
+  		<fileset dir="${lib.dir}" includes="*.exe"></fileset>-->
+  		<fileset dir="${lib.dir}/.." includes="LICENSE.txt"></fileset>
+  	</copy>
+  	
+    <copy todir="${classes.dir.tests}">
+      <fileset dir="${src.dir.tests}" excludes="**/*.java"/>
+    </copy>
+ 
+  </target>
+
+
+  <target name="tests"
+          depends="compile"
+          description="Run the automatic unit-tests">
+
+    <mkdir dir="${doc.testreports.dir}"/>
+
+    <junit haltonfailure="true">
+      <formatter type="plain"/>
+
+      <classpath>
+        <path refid="class.path.tests"/>
+        <pathelement  path="${classes.dir.tests}"/>
+      </classpath>
+
+      <batchtest fork="yes"
+                 todir="${doc.testreports.dir}">
+        <fileset dir="${src.dir.tests}">
+          <include name="**/*Test*.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <target name="makejar" depends="tests" if="jsapi_jar.isPresent">
+    <mkdir dir="${dist_dir}"/>
+    <jar destfile="${dist_dir}/osmnavigation-2.4.4-freetts.jar"
+    	basedir="${classes.dir}">
+    	<manifest>
+    		<attribute name="Main-Class" value="org.openstreetmap.travelingsalesman.freetts.FreeTTSVoiceSynth"/>
+    		<attribute name="Class-Path" value="freetts.jar jsapi.jar"/>
+    	</manifest>
+    </jar>
+  </target>
+
+
+  <target name="dist"
+        depends="makejar"
+        description="make all the distribution's jar-files"
+  	    if="jsapi_jar.isPresent">
+  	<property environment="env"/>
+  	<echo>
+  	  	Done.
+  		To install this speech-pack for OsmNavigation (part of the
+  		Traveling Salesman navigation software) copy dist/osmnavigation-speechpack.jar
+	    to:
+  	    ${env.APPDATA}\openstreetmap\libosm\ (Windows) or
+  	    ${user.home}/.openstreetmap/libosm (Unix)
+  	    ALSO
+  	    copy src/speech.properties to ${user.home}
+  	 </echo>
+  </target>
+
+  <target name="libosm" description="call the build-file of libosm">
+    <ant antfile="${lib.dir.libosm}/../build.xml" target="dist" dir="${lib.dir.libosm}/../"/>
+  </target>
+
+  <target name="distrecursive"
+        depends="libosm, makejar"
+        description="make all the distribution's jar-files after making libosm">
+  </target>
+
+
+</project>

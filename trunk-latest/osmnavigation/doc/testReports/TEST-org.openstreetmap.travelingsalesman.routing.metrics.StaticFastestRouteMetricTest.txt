@@ -1,0 +1,6 @@
+Testsuite: org.openstreetmap.travelingsalesman.routing.metrics.StaticFastestRouteMetricTest
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.723 sec
+
+Testcase: testGetCostRoutingStep took 0.72 sec
+Testcase: testGetCostNodeRoutingStepRoutingStep took 0 sec
+Testcase: testGetMap took 0 sec

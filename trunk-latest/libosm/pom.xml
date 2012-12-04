@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.sourceforge.travelingsales</groupId>
+    <artifactId>libosm</artifactId>
+    <packaging>jar</packaging>
+    <version>2.5.2-RC1-SNAPSHOT</version>
+    <name>TravelingSalesman - LibOSM</name>
+    <url>http://travelingsales.sourceforge.net</url>
+    <description>
+        LibOSM is a java-library for working with OpenStreetMap-data.
+        It is based on Osmosis and features multiple ways to store, search, filter, download and index map-data as
+        well as a configuration- and plugin-api.
+    </description>
+
+    <parent>
+        <groupId>net.sourceforge.travelingsales.all</groupId>
+        <artifactId>all</artifactId>
+        <version>2.5.2-RC1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <scm>
+        <connection>scm:svn:http://travelingsales.svn.sourceforge.net/svnroot/travelingsales/libosm</connection>
+        <developerConnection>scm:svn:https://travelingsales.svn.sourceforge.net/svnroot/travelingsales/libosm
+        </developerConnection>
+        <tag>HEAD</tag>
+        <url>http://travelingsales.svn.sourceforge.net/svnroot/travelingsales/libosm</url>
+    </scm>
+
+    <build>
+        <!-- stay compatible with the non-maven directory-layout  -->
+        <sourceDirectory>${basedir}/src</sourceDirectory>
+        <scriptSourceDirectory>${basedir}/scripts</scriptSourceDirectory>
+        <testSourceDirectory>${basedir}/test/unit</testSourceDirectory>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openstreetmap.osmosis</groupId>
+            <artifactId>osmosis</artifactId>
+            <version>0.35-20100225</version>
+        </dependency>
+        <dependency>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>1.8.0.10</version>
+        </dependency>
+
+        <!-- l2fprod is used for the settings-dialog -->
+        <dependency>
+            <groupId>l2fprod</groupId>
+            <artifactId>l2fprod-common-all</artifactId>
+            <version>7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.3.154</version>
+        </dependency>
+    </dependencies>
+
+    <!--  -->
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <url>scp://marcuswolschon@shell.sourceforge.net/home/groups/t/tr/travelingsales/htdocs/libOSM</url>
+        </site>
+    </distributionManagement>
+
+    <licenses>
+        <license>
+            <name>General Public Licence (GPL)</name>
+            <url>http://www.gnu.org/licenses/gpl-3.0.html</url>
+            <distribution>repo</distribution>
+            <comments>GPL Version 3 or newer</comments>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>SourceForge</system>
+        <url>http://sourceforge.net/tracker/?group_id%3D203597&amp;atid%3D986231</url>
+    </issueManagement>
+
+    <repositories>
+        <repository>
+            <id>freehep</id>
+            <url>http://java.freehep.org/maven2</url>
+        </repository>
+        <repository>
+            <!-- l2fprod -->
+            <id>astrogrid</id>
+            <url>http://www.astrogrid.org/maven</url>
+            <layout>legacy</layout>
+        </repository>
+        <repository>
+            <!-- osmosis -->
+            <id>opensahara</id>
+            <url>http://dev.opensahara.com/nexus/content/repositories/thirdparty</url>
+        </repository>
+    </repositories>
+
+</project>

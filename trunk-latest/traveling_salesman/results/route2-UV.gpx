@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+
+<trkpt lat="34.075762" lon="-118.4555594" >
+<name>Node on 'Veteran Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.0721934" lon="-118.4551846" >
+<name>Node on 'Veteran Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.070344" lon="-118.4539222" >
+<name>Node on 'Gayley Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.0683221" lon="-118.4536598" >
+<name>Node on 'Kelton Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.0665313" lon="-118.4534345" >
+<name>Node on 'Kelton Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.0641449" lon="-118.4527211" >
+<name>corner on 'Kelton Avenue' 'Strathmore Drive'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.0643271" lon="-118.4518762" >
+<name>Node on 'Strathmore Drive'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+</trkseg></trk></gpx>

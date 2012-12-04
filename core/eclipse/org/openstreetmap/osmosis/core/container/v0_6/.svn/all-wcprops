@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6
+END
+BoundContainerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/BoundContainerFactory.java
+END
+NodeContainerIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/NodeContainerIterator.java
+END
+WayContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/WayContainer.java
+END
+EntityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/EntityManager.java
+END
+EntityContainerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/EntityContainerFactory.java
+END
+RelationContainerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/RelationContainerFactory.java
+END
+BoundContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/BoundContainer.java
+END
+EntityProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/EntityProcessor.java
+END
+WayContainerIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/WayContainerIterator.java
+END
+EntityContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/EntityContainer.java
+END
+NodeContainerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/NodeContainerFactory.java
+END
+RelationContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/RelationContainer.java
+END
+BoundContainerIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/BoundContainerIterator.java
+END
+Dataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/Dataset.java
+END
+EntityContainerBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/EntityContainerBuilder.java
+END
+ChangeContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/ChangeContainer.java
+END
+NodeContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/NodeContainer.java
+END
+RelationContainerIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/RelationContainerIterator.java
+END
+DatasetContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/DatasetContext.java
+END
+WayContainerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/container/v0_6/WayContainerFactory.java
+END

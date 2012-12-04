@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+<trkpt lat="34.064935" lon="-118.4502256" >
+<name>Node on 'Levering Avenue'</name>
+<cmt>osm-id 1457413432</cmt>
+<desc>osm-id 1457413432</desc>
+</trkpt>
+<trkpt lat="34.0656598" lon="-118.4505478" >
+<name>corner   'Strathmore Drive' 'Levering Avenue'</name>
+<cmt>osm-id 123206570</cmt>
+<desc>osm-id 123206570</desc>
+</trkpt>
+<trkpt lat="34.0641449" lon="-118.4527211" >
+<name>corner   'Kelton Avenue' 'Strathmore Drive'</name>
+<cmt>osm-id 123396586</cmt>
+<desc>osm-id 123396586</desc>
+</trkpt>
+<trkpt lat="34.0683221" lon="-118.4536598" >
+<name>corner   'Kelton Avenue' 'Ophir Drive'</name>
+<cmt>osm-id 123113760</cmt>
+<desc>osm-id 123113760</desc>
+</trkpt>
+</trkseg></trk></gpx>

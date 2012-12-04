@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>index_html.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>addTrafficServlet</servlet-name>
+    <servlet-class>org.openstreetmap.webservices.trafficmessages.server.AddTrafficMessagesServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>removetrafficServlet</servlet-name>
+    <servlet-class>org.openstreetmap.webservices.trafficmessages.server.RemoveTrafficMessagesServiceImpl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addLocationServlet</servlet-name>
+    <servlet-class>org.openstreetmap.webservices.trafficmessages.server.AddLocationServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addTrafficServlet</servlet-name>
+    <url-pattern>/postmessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>removetrafficServlet</servlet-name>
+    <url-pattern>/removemessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addLocationServlet</servlet-name>
+    <url-pattern>/postlocation</url-pattern>
+  </servlet-mapping>
+
+</web-app>

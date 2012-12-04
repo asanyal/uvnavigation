@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.sourceforge.travelingsales.all</groupId>
+  <artifactId>all</artifactId>
+  <packaging>pom</packaging>
+  <version>2.3.10-SNAPSHOT</version>
+  <name>TravelingSalesman</name>
+  <url>http://travelingsales.sourceforge.net</url>
+  <description>Travelings-Salesman is a Route-Planner and GPS-Navigator using
+  the map-data from OpenStreetMap via LibOSM.
+
+  It constists of:
+   * travelingSalesman - a standalong navigation-program for Laptops.
+   * osmnavigation - a library for developing navugation and route-planning -applications
+   * libosm - a library to work with OpenStreetMap-data.</description>
+
+
+  <!-- list of sub-projects that make up taveling-salesman -->
+  <modules>
+    <module>libosm</module>
+    <module>osmnavigation</module>
+    <module>traveling_salesman</module>
+  </modules>
+
+  <parent>
+    <groupId>net.sourceforge.travelingsales.base</groupId>
+    <artifactId>base</artifactId>
+    <version>2.3.10-SNAPSHOT</version>
+    <relativePath>./maven-all/pom.xml</relativePath>
+  </parent>
+
+  <!--  -->
+  <distributionManagement>
+    <site>
+      <id>website</id>
+      <url>scp://marcuswolschon@shell.sourceforge.net/home/groups/t/tr/travelingsales/htdocs/all</url>
+    </site>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:svn:http://travelingsales.svn.sourceforge.net/svnroot/travelingsales</connection>
+    <developerConnection>scm:svn:https://travelingsales.svn.sourceforge.net/svnroot/travelingsales</developerConnection>
+    <tag>HEAD</tag>
+    <url>http://travelingsales.svn.sourceforge.net/svnroot/travelingsales</url>
+  </scm>
+
+
+ <licenses>
+  <license>
+    <name>General Public Licence (GPL)</name>
+    <url>http://www.gnu.org/licenses/gpl-3.0.html</url>
+    <distribution>repo</distribution>
+    <comments>GPL Version 3 or newer</comments>
+  </license>
+ </licenses>
+
+ <issueManagement>
+  <system>SourceForge</system>
+  <url>http://sourceforge.net/tracker/?group_id%3D203597&amp;atid%3D986231</url>
+ </issueManagement>
+
+</project>

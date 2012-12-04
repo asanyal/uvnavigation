@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+<trkpt lat="34.0683221" lon="-118.4536598" >
+<name>corner   'Kelton Avenue' 'Ophir Drive'</name>
+<cmt>osm-id 123113760</cmt>
+<desc>osm-id 123113760</desc>
+</trkpt>
+<trkpt lat="34.070344" lon="-118.4539222" >
+<name>corner   'Kelton Avenue' 'Gayley Avenue'</name>
+<cmt>osm-id 1717302728</cmt>
+<desc>osm-id 1717302728</desc>
+</trkpt>
+<trkpt lat="34.070314" lon="-118.4550453" >
+<name>corner   'Montana Avenue' 'Gayley Avenue' 'Veteran Avenue'</name>
+<cmt>osm-id 122584740</cmt>
+<desc>osm-id 122584740</desc>
+</trkpt>
+</trkseg></trk></gpx>

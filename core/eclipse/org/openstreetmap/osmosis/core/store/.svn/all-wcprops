@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store
+END
+StaticStoreClassRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StaticStoreClassRegister.java
+END
+GenericObjectWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/GenericObjectWriter.java
+END
+BufferedRandomAccessFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/BufferedRandomAccessFileInputStream.java
+END
+ObjectWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ObjectWriter.java
+END
+DataOutputStoreWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/DataOutputStoreWriter.java
+END
+SubObjectStreamIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/SubObjectStreamIterator.java
+END
+RandomAccessObjectStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/RandomAccessObjectStore.java
+END
+OffsetTrackingOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/OffsetTrackingOutputStream.java
+END
+IndexedObjectStoreReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IndexedObjectStoreReader.java
+END
+IndexStoreReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IndexStoreReader.java
+END
+StoreableConstructorCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StoreableConstructorCache.java
+END
+PersistentIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/PersistentIterator.java
+END
+SegmentedObjectStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/SegmentedObjectStore.java
+END
+SingleClassObjectReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/SingleClassObjectReader.java
+END
+IndexElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IndexElement.java
+END
+PeekableIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/PeekableIterator.java
+END
+UnsignedIntegerComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/UnsignedIntegerComparator.java
+END
+SingleClassObjectSerializationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/SingleClassObjectSerializationFactory.java
+END
+IndexStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IndexStore.java
+END
+IndexedObjectStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IndexedObjectStore.java
+END
+DataPostboxLoadInjector.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/DataPostboxLoadInjector.java
+END
+MultipleSourceIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/MultipleSourceIterator.java
+END
+EndOfStoreException.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/EndOfStoreException.java
+END
+DataPostbox.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/DataPostbox.java
+END
+StorageStage.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StorageStage.java
+END
+DataInputStoreReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/DataInputStoreReader.java
+END
+ObjectDataInputIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ObjectDataInputIterator.java
+END
+SingleClassObjectWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/SingleClassObjectWriter.java
+END
+ReleasableAdaptorForIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ReleasableAdaptorForIterator.java
+END
+StoreReleasingIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StoreReleasingIterator.java
+END
+EmptyIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/EmptyIterator.java
+END
+UpcastIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/UpcastIterator.java
+END
+IntegerLongIndexElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IntegerLongIndexElement.java
+END
+StoreReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StoreReader.java
+END
+NoSuchIndexElementException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/NoSuchIndexElementException.java
+END
+Storeable.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/Storeable.java
+END
+LongLongIndexElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/LongLongIndexElement.java
+END
+BaseStoreClassRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/BaseStoreClassRegister.java
+END
+BaseObjectReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/BaseObjectReader.java
+END
+ChunkedObjectStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ChunkedObjectStore.java
+END
+GenericObjectReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/GenericObjectReader.java
+END
+StoreClassRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StoreClassRegister.java
+END
+StoreWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/StoreWriter.java
+END
+GenericObjectSerializationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/GenericObjectSerializationFactory.java
+END
+RandomAccessObjectStoreReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/RandomAccessObjectStoreReader.java
+END
+ObjectReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ObjectReader.java
+END
+DynamicStoreClassRegister.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/DynamicStoreClassRegister.java
+END
+ObjectStreamIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ObjectStreamIterator.java
+END
+ObjectSerializationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ObjectSerializationFactory.java
+END
+SimpleObjectStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/SimpleObjectStore.java
+END
+ComparableComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/ComparableComparator.java
+END
+IndexRangeIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/IndexRangeIterator.java
+END
+BaseObjectWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/store/BaseObjectWriter.java
+END

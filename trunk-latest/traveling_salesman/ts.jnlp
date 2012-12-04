@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="1.6+"
+  codebase="http://travelingsales.sourceforge.net"
+  href="ts.jnlp">
+  <information>
+    <title>Traveling Salesman</title>
+    <vendor>Wolschon Softwaredesign und Beratung</vendor>
+    <homepage href="http://apps.sourceforge.net/mediawiki/travelingsales/"/>
+    <description>Traveling Salesman - open source navigation and routing-application for OpenStreetMap</description>
+    <description kind="short">Traveling Salesman - navigator for OpenStreetMap</description>
+
+<!--  <icon href="images/swingset2.jpg"/>
+
+    <icon kind="splash" href="images/splash.gif"/>-->
+    <offline-allowed/> 
+
+<!--    <association mime-type="application-x/swingset2-file" extensions="swingset2">-->
+
+    <shortcut online="false">
+      <desktop/>
+      <menu submenu="OpenStreetMap"/>
+    </shortcut>
+  </information>
+
+<!--  <information os="linux">   
+    <title> SwingSet2 Demo on Linux </title>
+    <homepage href="docs/linuxhelp.html">
+  </information>-->
+
+  <security>
+      <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.6+" java-vm-args=""/>
+    <jar href="traveling_salesman-VERSION.signed.jar"/>
+  </resources>
+  <application-desc main-class="org.openstreetmap.travelingsalesman.Main"/>
+</jnlp>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/lifecycle
+END
+Releasable.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/lifecycle/Releasable.java
+END
+ReleasableContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/lifecycle/ReleasableContainer.java
+END
+Completable.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/lifecycle/Completable.java
+END
+ReleasableIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/lifecycle/ReleasableIterator.java
+END
+CompletableContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/lifecycle/CompletableContainer.java
+END

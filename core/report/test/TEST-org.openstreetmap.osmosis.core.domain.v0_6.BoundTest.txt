@@ -1,0 +1,30 @@
+Testsuite: org.openstreetmap.osmosis.core.domain.v0_6.BoundTest
+Tests run: 27, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+
+Testcase: testConstructor1 took 0.008 sec
+Testcase: testConstructor2 took 0 sec
+Testcase: testConstructor3 took 0 sec
+Testcase: testConstructor4 took 0 sec
+Testcase: testConstructor5 took 0 sec
+Testcase: testConstructor6 took 0 sec
+Testcase: testConstructor7 took 0 sec
+Testcase: testConstructor8 took 0.001 sec
+Testcase: testConstructor9 took 0 sec
+Testcase: testConstructor10 took 0 sec
+Testcase: testConstructor11 took 0 sec
+Testcase: testConstructor12 took 0 sec
+Testcase: testIntersect1 took 0 sec
+Testcase: testIntersect2 took 0 sec
+Testcase: testIntersect3 took 0 sec
+Testcase: testIntersect4 took 0 sec
+Testcase: testIntersect5 took 0 sec
+Testcase: testIntersect6 took 0 sec
+Testcase: testUnion1 took 0 sec
+Testcase: testUnion2 took 0 sec
+Testcase: testUnion3 took 0 sec
+Testcase: testUnion4 took 0 sec
+Testcase: testUnion5 took 0 sec
+Testcase: testUnion6 took 0 sec
+Testcase: testUnion7 took 0.001 sec
+Testcase: testToSimpleBound1 took 0 sec
+Testcase: testToSimpleBound2 took 0 sec

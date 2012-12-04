@@ -1,0 +1,13 @@
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException, true
+java.lang.Boolean, true
+java.lang.Exception, false
+java.lang.RuntimeException, false
+java.lang.String, true
+java.lang.Throwable, false
+java.util.ArrayList, true
+java.util.Arrays$ArrayList, true
+java.util.HashSet, true
+java.util.LinkedList, true
+java.util.TreeMap, true
+java.util.TreeSet, true
+java.util.Vector, true

@@ -1,0 +1,15 @@
+Testsuite: org.openstreetmap.travelingsalesman.trafficblocks.tmc.TMCfromNMEAFilterTest
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.601 sec
+------------- Standard Output ---------------
+Dec 3, 2012 2:41:16 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.TMCfromNMEAFilter read
+FINER: GNS 2.0 received: 0x3fd9-485-2820-8330-e43f
+Dec 3, 2012 2:41:16 PM org.openstreetmap.travelingsalesman.trafficblocks.tmc.TMCfromNMEAFilter tmcBlockReceived
+INFO: (thread: 1=main at 100.4MHz) RDS(TMC?)-message received (1 listeners)
+------------- ---------------- ---------------
+
+Testcase: testTestdataBin took 0.595 sec
+Testcase: testDecodeFrequencyCode took 0.001 sec
+Testcase: testDecodeFrequencyCode2 took 0.001 sec
+Testcase: testEncodeFrequencyCode took 0.001 sec
+Testcase: testByteToHex took 0 sec
+Testcase: testHexToByte took 0.001 sec

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6
+END
+Way.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/Way.java
+END
+RelationMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/RelationMember.java
+END
+UnmodifiableTagCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/UnmodifiableTagCollection.java
+END
+WayNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/WayNode.java
+END
+Bound.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/Bound.java
+END
+WayBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/WayBuilder.java
+END
+TagCollectionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/TagCollectionImpl.java
+END
+Tag.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/Tag.java
+END
+Entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/Entity.java
+END
+Relation.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/Relation.java
+END
+EntityType.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/EntityType.java
+END
+CommonEntityData.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/CommonEntityData.java
+END
+EntityBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/EntityBuilder.java
+END
+RelationBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/RelationBuilder.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/Node.java
+END
+TagCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/TagCollection.java
+END
+NodeBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/NodeBuilder.java
+END
+OsmUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/domain/v0_6/OsmUser.java
+END

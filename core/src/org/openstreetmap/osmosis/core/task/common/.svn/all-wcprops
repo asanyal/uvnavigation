@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/common
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/common/Task.java
+END
+ChangeAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/common/ChangeAction.java
+END
+RunnableTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/common/RunnableTask.java
+END

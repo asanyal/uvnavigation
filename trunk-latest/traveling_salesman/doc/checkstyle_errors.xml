@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/Main.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/TSNavigationConfigSection.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/actions/OpenInJosmAction.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/MainFrame.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/MapMover.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/MapPanel.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/MapScaler.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/PlaceFinderPanel.java">
+<error line="227" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/RouteInstructionPanel.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/ZoomSlider.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/package.html">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/package.html">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/package.html">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/actions/package.html">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/Main.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/TSNavigationConfigSection.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/actions/OpenInJosmAction.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/MainFrame.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/MapMover.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/MapPanel.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/MapScaler.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/PlaceFinderPanel.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/RouteInstructionPanel.java">
+</file>
+<file name="/home/fox/workspace/traveling_salesman/src/org/openstreetmap/travelingsalesman/gui/widgets/ZoomSlider.java">
+</file>
+</checkstyle>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="org.openstreetmap.travelingsalesman.freetts" version="1.0.6"
+	class="org.openstreetmap.travelingsalesman.freetts.PluginMain">
+	<requires>
+	       <import plugin-id="org.openstreetmap.osm.Plugins.Core" version="2.5.1"/>
+	</requires>
+	<runtime>
+		<library id="mycode" path="/" type="code"/>
+ 	</runtime>
+	<extension plugin-id="org.openstreetmap.osm.Plugins.Core"
+	           point-id="GenericPlugin" id="FreeTTS">
+		<parameter id="interfaceProvided" value="org.openstreetmap.travelingsalesman.routing.speech.IVoiceSynth"/>
+		<parameter id="class" value="org.openstreetmap.travelingsalesman.freetts.FreeTTSVoiceSynth"/>
+		<parameter id="name" value="FreeTTS"/>
+	</extension>
+</plugin>

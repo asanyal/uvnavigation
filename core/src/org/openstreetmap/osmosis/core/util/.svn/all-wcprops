@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util
+END
+LazyHashMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/LazyHashMap.java
+END
+ResourceFileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/ResourceFileManager.java
+END
+FixedPrecisionCoordinateConvertor.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/FixedPrecisionCoordinateConvertor.java
+END
+FileBasedLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/FileBasedLock.java
+END
+TileCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/TileCalculator.java
+END
+MultiMemberGZIPInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/MultiMemberGZIPInputStream.java
+END
+AtomicFileCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/AtomicFileCreator.java
+END
+CollectionWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/CollectionWrapper.java
+END
+IntAsChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/IntAsChar.java
+END
+PropertiesPersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/PropertiesPersister.java
+END
+LongAsInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/util/LongAsInt.java
+END

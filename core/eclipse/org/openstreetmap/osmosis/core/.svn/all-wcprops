@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core
+END
+OsmosisRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/OsmosisRuntimeException.java
+END
+OsmosisConstants.java.template
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/OsmosisConstants.java.template
+END
+TaskRegistrar.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/TaskRegistrar.java
+END
+OsmosisException.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/OsmosisException.java
+END
+Osmosis.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/Osmosis.java
+END
+CorePluginLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/CorePluginLoader.java
+END

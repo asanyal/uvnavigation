@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/.project
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/ivy.xml
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/pom.xml
+END
+.checkstyle
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/.checkstyle
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/build.xml
+END

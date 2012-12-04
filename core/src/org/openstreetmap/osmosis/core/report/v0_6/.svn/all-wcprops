@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/report/v0_6
+END
+EntityReporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/report/v0_6/EntityReporter.java
+END
+IntegrityReporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/report/v0_6/IntegrityReporter.java
+END
+EntityReporterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/report/v0_6/EntityReporterFactory.java
+END
+IntegrityReporterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/report/v0_6/IntegrityReporterFactory.java
+END

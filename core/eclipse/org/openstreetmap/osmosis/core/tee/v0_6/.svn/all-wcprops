@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/tee/v0_6
+END
+EntityTeeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/tee/v0_6/EntityTeeFactory.java
+END
+ChangeTee.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/tee/v0_6/ChangeTee.java
+END
+EntityTee.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/tee/v0_6/EntityTee.java
+END
+ChangeTeeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/tee/v0_6/ChangeTeeFactory.java
+END

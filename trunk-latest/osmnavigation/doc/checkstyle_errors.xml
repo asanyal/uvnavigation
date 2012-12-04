@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/INavigatableComponent.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/DummyGPSProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/GPXFileProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/GpsDProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/IGPSProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/NMEAFileProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/NMEAParsingGPSProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/IRoutingStepListener.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/NavigationManager.java">
+<error line="366" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="419" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="470" severity="warning" message="Der erste Satz sollte mit einem Punkt abschließen." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+<error line="594" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="629" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="658" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="673" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/OsmNavigationConfigSection.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/BasePaintVisitor.java">
+<error line="532" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/ColorHelper.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/IPaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/ODRPaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/SimplePaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/SmoothTilePainter.java">
+<error line="95" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="188" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="189" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+<error line="190" column="21" severity="warning" message="&apos;18&apos; sollte durch eine Konstante definiert sein." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="190" column="23" severity="warning" message="Vor &apos;)&apos; befindet sich ein Leerzeichen." source="com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck"/>
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/TilePaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/MapFeatures.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/ODRWay.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/PathWay.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/PolygonWay.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/IProgressListener.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/IRouteChangedListener.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/IRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/NameHelper.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/Route.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/Selector.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/describers/IRouteDescriber.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/describers/SimpleRouteDescriber.java">
+<error line="178" severity="warning" message="Kommentar entspricht to-do-Format &apos;TODO:&apos;." source="com.puppycrawl.tools.checkstyle.checks.TodoCommentCheck"/>
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/IRoutingMetric.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/ShortestRouteMetric.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/StaticFastestRouteMetric.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DepthFirstRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DijkstraRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DirectedDepthFirstRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DistanceComparator.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/MultiTargetDijkstraRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/NodeDistanceComparator.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/selectors/SimpleCarSelector.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/selectors/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/describers/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/package.html">
+<error line="0" severity="warning" message="Fehlende Package-Dokumentation." source="com.puppycrawl.tools.checkstyle.checks.javadoc.PackageHtmlCheck"/>
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/package.html">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/INavigatableComponent.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/DummyGPSProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/GPXFileProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/GpsDProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/IGPSProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/NMEAFileProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/gps/NMEAParsingGPSProvider.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/IRoutingStepListener.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/NavigationManager.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/navigation/OsmNavigationConfigSection.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/BasePaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/ColorHelper.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/IPaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/ODRPaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/SimplePaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/SmoothTilePainter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/TilePaintVisitor.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/MapFeatures.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/ODRWay.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/PathWay.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/painting/odr/PolygonWay.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/IProgressListener.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/IRouteChangedListener.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/IRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/NameHelper.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/Route.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/Selector.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/describers/IRouteDescriber.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/describers/SimpleRouteDescriber.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/IRoutingMetric.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/ShortestRouteMetric.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/metrics/StaticFastestRouteMetric.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DepthFirstRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DijkstraRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DirectedDepthFirstRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/DistanceComparator.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/MultiTargetDijkstraRouter.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/routers/NodeDistanceComparator.java">
+</file>
+<file name="/home/fox/workspace/osmnavigation/src/org/openstreetmap/travelingsalesman/routing/selectors/SimpleCarSelector.java">
+</file>
+</checkstyle>

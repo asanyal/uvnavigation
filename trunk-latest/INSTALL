@@ -1,0 +1,5 @@
+Using maven 2:
+
+mvn install:install-file -DgroupId=speechd -DartifactId=speechd-cvs -Dversion=20090321 -Dpackaging=jar \
+	-Dfile=osmnavigation/lib/speechd-cvs-20090321.jar
+mvn clean install

@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/Source.java
+END
+SinkMultiSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/SinkMultiSource.java
+END
+ChangeSinkChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/ChangeSinkChangeSource.java
+END
+MultiChangeSinkRunnableChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiChangeSinkRunnableChangeSource.java
+END
+Sink.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/Sink.java
+END
+ChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/ChangeSource.java
+END
+DatasetSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/DatasetSource.java
+END
+DatasetSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/DatasetSink.java
+END
+ChangeSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/ChangeSink.java
+END
+MultiSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiSource.java
+END
+SinkRunnableSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/SinkRunnableSource.java
+END
+ChangeSinkMultiChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/ChangeSinkMultiChangeSource.java
+END
+MultiSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiSink.java
+END
+MultiChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiChangeSource.java
+END
+SinkSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/SinkSource.java
+END
+MultiChangeSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiChangeSink.java
+END
+RunnableSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/RunnableSource.java
+END
+MultiSinkRunnableSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiSinkRunnableSource.java
+END
+ChangeSinkRunnableChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/ChangeSinkRunnableChangeSource.java
+END
+DatasetSinkSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/DatasetSinkSource.java
+END
+SinkDatasetSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/SinkDatasetSource.java
+END
+RunnableChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/RunnableChangeSource.java
+END
+RunnableDatasetSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/RunnableDatasetSource.java
+END
+MultiSinkMultiChangeSinkRunnableSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiSinkMultiChangeSinkRunnableSource.java
+END
+MultiSinkRunnableChangeSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/task/v0_6/MultiSinkRunnableChangeSource.java
+END

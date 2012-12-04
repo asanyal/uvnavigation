@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+
+<trkpt lat="34.0656868" lon="-118.43806" >
+<name>Node on 'Manning Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+<trkpt lat="34.0645629" lon="-118.4378163" >
+<name>Node on 'Manning Avenue'</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+</trkseg></trk></gpx>

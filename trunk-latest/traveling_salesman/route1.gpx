@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+<trkpt lat="34.0644844" lon="-118.4371181" >
+<name>Node on 'Le Conte Avenue'</name>
+<cmt>osm-id 1903786610</cmt>
+<desc>osm-id 1903786610</desc>
+</trkpt>
+<trkpt lat="34.0645629" lon="-118.4378163" >
+<name>corner   'Manning Avenue' 'Le Conte Avenue'</name>
+<cmt>osm-id 123698392</cmt>
+<desc>osm-id 123698392</desc>
+</trkpt>
+</trkseg></trk></gpx>

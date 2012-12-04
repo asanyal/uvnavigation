@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database
+END
+DbFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbFeature.java
+END
+DatabaseConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DatabaseConstants.java
+END
+FeaturePopulator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/FeaturePopulator.java
+END
+DbOrderedFeatureRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbOrderedFeatureRowMapper.java
+END
+SortingStoreRowMapperListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/SortingStoreRowMapperListener.java
+END
+DbOrderedFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbOrderedFeature.java
+END
+DatabaseType.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DatabaseType.java
+END
+RelationMemberCollectionLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/RelationMemberCollectionLoader.java
+END
+WayNodeCollectionLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/WayNodeCollectionLoader.java
+END
+DatabaseTaskManagerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DatabaseTaskManagerFactory.java
+END
+DatabaseLoginCredentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DatabaseLoginCredentials.java
+END
+DbFeatureHistoryComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbFeatureHistoryComparator.java
+END
+DbFeatureHistoryRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbFeatureHistoryRowMapper.java
+END
+DbOrderedFeatureHistoryComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbOrderedFeatureHistoryComparator.java
+END
+RowMapperListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/RowMapperListener.java
+END
+DbFeatureHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbFeatureHistory.java
+END
+AuthenticationPropertiesLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/AuthenticationPropertiesLoader.java
+END
+DatabasePreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DatabasePreferences.java
+END
+ReleasableStatementContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/ReleasableStatementContainer.java
+END
+DbFeatureComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbFeatureComparator.java
+END
+DbFeatureRowMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/DbFeatureRowMapper.java
+END
+FeatureCollectionLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/26826/applications/utils/osmosis/trunk.orig/core/src/org/openstreetmap/osmosis/core/database/FeatureCollectionLoader.java
+END

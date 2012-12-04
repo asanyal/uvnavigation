@@ -1,0 +1,987 @@
+Testsuite: org.openstreetmap.travelingsalesman.routing.routers.GeneralRouterTest
+Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.605 sec
+------------- Standard Output ---------------
+Timing: 
+	 findNearestNode(1) took 1ms
+	 findNearestNode(2) took 1ms
+
+	 route took 22ms using DepthFirstRouter
+
+	 route took 23ms using DirectedDepthFirstRouter
+
+111042.55940084855
+Current: 3
+Node: Node(id=6, #tags=1, name='myEndNode'), Distance: 110856.9974726383
+Node: Node(id=4, #tags=0), Distance: 72840.22835626772
+0.0
+Current: 6
+
+
+Entered Reconstruct !!!
+	 route took 4ms using DijkstraRouter
+
+	 route took 1ms using MultiTargetDijkstraRouter
+
+	 route took 6ms using TurnRestrictedAStar
+
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "2" = "myStartNode" maxDepth=4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: [DepthFirstRouter] trying Segment to: 3 named "middleNode0(rechable from start on allways)"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "3" = "middleNode0(rechable from start on allways)" maxDepth=3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: [DepthFirstRouter] trying Segment to: 6 named "myEndNode"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "6" = "myEndNode" maxDepth=2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+INFO: [DepthFirstRouter] we found a route! ending in Node "myEndNode"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] statistics: lastNodes contains 3 nodes
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] found a route by going: myEndNode named "myEndNode"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] found a route by going: middleNode0(rechable from start on allways) named "middleNode0(rechable from start on allways)"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: DepthFirstRouter - combining 2 steps that share a way
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "2" = "myStartNode" maxDepth=4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: [DepthFirstRouter] trying Segment to: 3 named "middleNode0(rechable from start on allways)"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "3" = "middleNode0(rechable from start on allways)" maxDepth=3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: [DepthFirstRouter] trying Segment to: 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "4" = "null" maxDepth=2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: [DepthFirstRouter] trying Segment to: 5 named "middleNode2(reachable from middleNode0 on long way)"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "5" = "middleNode2(reachable from middleNode0 on long way)" maxDepth=1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: [DepthFirstRouter] trying Segment to: 6 named "myEndNode"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] starting in "6" = "myEndNode" maxDepth=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+INFO: [DepthFirstRouter] we found a route! ending in Node "myEndNode"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] statistics: lastNodes contains 5 nodes
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] found a route by going: myEndNode named "myEndNode"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] found a route by going: middleNode2(reachable from middleNode0 on long way) named "middleNode2(reachable from middleNode0 on long way)"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: DepthFirstRouter - combining 2 steps that share a way
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] found a route by going: null
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINEST: DepthFirstRouter - combining 2 steps that share a way
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DepthFirstRouter findRoute
+FINE: [DepthFirstRouter] found a route by going: middleNode0(rechable from start on allways) named "middleNode0(rechable from start on allways)"
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DijkstraRouter route
+INFO: DijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.DijkstraRouter route
+INFO: UV DijkstraRouter found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.MultiTargetDijkstraRouter route
+INFO: MultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.MultiTargetDijkstraRouter route
+INFO: MultiTargetDijkstraRouter found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 3 via way 0 to 6 (stepkey=3-0-6) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 5 via way 1 to 6 (stepkey=5-1-6) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-0-6 (best distance of this step to the start-nodes was 332756.5543461251 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-0-6 #stepsToVisit=1 =48487743
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 6 via way 0 to 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 0 to 3 (stepkey=2-0-3) forbiddenStepKeys=48487743
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 1 to 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 1 to 3 (stepkey=2-1-3) forbiddenStepKeys=48487743
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 1 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 1 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 0 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 0 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 1 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 1 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 6 via way 0 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 6 is via way 0 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 6-0-3 (best distance of this step to the start-nodes was 332757.95591704664 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 6-0-3 #stepsToVisit=3 =99746046
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 5 via way 1 to 6 (stepkey=5-1-6) forbiddenStepKeys=99746046
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 1 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-1-3 (best distance of this step to the start-nodes was 332942.1162743354 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-1-3 #stepsToVisit=2 =147311226
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 2 to 3 (stepkey=2-2-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-2-3 (best distance of this step to the start-nodes was 380005.0956595201 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-2-3 #stepsToVisit=0 =47566141
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 1 to 2 (stepkey=1-1-2) forbiddenStepKeys=47566141
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 2 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 1 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 1 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-1-2 (best distance of this step to the start-nodes was 426128.96908219776 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-1-2 #stepsToVisit=1 =94207799
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 2 to 3 (stepkey=2-2-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-2-3 (best distance of this step to the start-nodes was 380005.0956595201 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-2-3 #stepsToVisit=0 =47566141
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+FINE: turn-restriction forbids to go from way 1 via node 2 to way 2 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 2 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-2-2 (best distance of this step to the start-nodes was 445195.1105232062 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-2-2 #stepsToVisit=0 =96055802
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter found nothing
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 2 to 3 (stepkey=2-2-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-2-3 (best distance of this step to the start-nodes was 380005.0956595201 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-2-3 #stepsToVisit=0 =47566141
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+FINE: turn-restriction forbids to go from way 1 via node 2 to way 2 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 2 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 3 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-2-2 (best distance of this step to the start-nodes was 445195.1105232062 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-2-2 #stepsToVisit=1 =96055802
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-3-2 (best distance of this step to the start-nodes was 445238.6170105285 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-3-2 #stepsToVisit=0 =145469945
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 3 to 4 (stepkey=2-3-4) forbiddenStepKeys=145469945
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 3 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 3 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-3-4 (best distance of this step to the start-nodes was 602653.0197729967 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-3-4 #stepsToVisit=0 =193037048
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 1 to 2 (stepkey=1-1-2) forbiddenStepKeys=193037048
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 1 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 1 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-1-2 (best distance of this step to the start-nodes was 648756.7456549249 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-1-2 #stepsToVisit=0 =239678706
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 2 to 3 (stepkey=2-2-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-2-3 (best distance of this step to the start-nodes was 380005.0956595201 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-2-3 #stepsToVisit=0 =47566141
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+FINE: turn-restriction forbids to go from way 1 via node 2 to way 2 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 2 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 3 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-2-2 (best distance of this step to the start-nodes was 445195.1105232062 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-2-2 #stepsToVisit=1 =96055802
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-3-2 (best distance of this step to the start-nodes was 445238.6170105285 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-3-2 #stepsToVisit=0 =145469945
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+FINE: turn-restriction forbids to go from way 3 via node 4 to way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter found nothing
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 2 to 3 (stepkey=2-2-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-2-3 (best distance of this step to the start-nodes was 380005.0956595201 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-2-3 #stepsToVisit=0 =47566141
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+FINE: turn-restriction forbids to go from way 1 via node 2 to way 2 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 2 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getTurnRestrictionsFrom
+FINE: Ignoring turn-restriction because of mismatching via-node
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 3 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 2 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 3 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-2-2 (best distance of this step to the start-nodes was 445195.1105232062 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-2-2 #stepsToVisit=1 =96055802
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-3-2 (best distance of this step to the start-nodes was 445238.6170105285 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-3-2 #stepsToVisit=0 =145469945
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getTurnRestrictionsFrom
+FINE: Ignoring turn-restriction because of mismatching via-node
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 3 to 4 (stepkey=2-3-4) forbiddenStepKeys=145469945
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 3 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 3 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-3-4 (best distance of this step to the start-nodes was 602653.0197729967 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-3-4 #stepsToVisit=0 =193037048
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 1 to 2 (stepkey=1-1-2) forbiddenStepKeys=193037048
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getTurnRestrictionsFrom
+FINE: Ignoring turn-restriction because of mismatching via-node
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 1 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 1 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-1-2 (best distance of this step to the start-nodes was 648756.7456549249 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-1-2 #stepsToVisit=0 =239678706
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 10 to 1 (stepkey=4-10-1) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 2 via way 7 to 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-10-1 (best distance of this step to the start-nodes was 1726.040360249233 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-10-1 #stepsToVisit=1 =1531781628
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 6 via way 8 to 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 1 via way 10 to 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 10 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 10 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 6 via way 8 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 6 is via way 8 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-10-4 (best distance of this step to the start-nodes was 2065.972123858886 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-10-4 #stepsToVisit=2 =-1317291490
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 2 via way 7 to 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 7 to node 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 6-8-4 (best distance of this step to the start-nodes was 2382.9383074795437 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 6-8-4 #stepsToVisit=1 =-1266025498
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 8 to 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 8 to 6 (stepkey=4-8-6) forbiddenStepKeys=-1266025498
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 8 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 8 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 8 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 8 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-8-6 (best distance of this step to the start-nodes was 2154.635396503725 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-8-6 #stepsToVisit=2 =-1217530067
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 3 via way 5 to 4 (stepkey=3-5-4) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-5-4 (best distance of this step to the start-nodes was 5374.865517290028 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-5-4 #stepsToVisit=0 =48492546
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 5 to 3 (stepkey=2-5-3) forbiddenStepKeys=48492546
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 5 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 5 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-5-3 (best distance of this step to the start-nodes was 6297.044824334278 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-5-3 #stepsToVisit=0 =96061570
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 5 to 2 (stepkey=1-5-2) forbiddenStepKeys=96061570
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 5 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 5 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-5-2 (best distance of this step to the start-nodes was 6297.044824334278 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-5-2 #stepsToVisit=0 =142707072
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 5 to 1 (stepkey=4-5-1) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 5 to 1 (stepkey=4-5-1) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-5-1 (best distance of this step to the start-nodes was 3148.5235228878696 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-5-1 #stepsToVisit=0 =49416064
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 5 to 1 (stepkey=4-5-1) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 5 to 1 (stepkey=4-5-1) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-5-1 (best distance of this step to the start-nodes was 4722.785284331804 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-5-1 #stepsToVisit=0 =49416064
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 3 via way 5 to 4 (stepkey=3-5-4) forbiddenStepKeys=49416064
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 5 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 5 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-5-4 (best distance of this step to the start-nodes was 4722.785284331804 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-5-4 #stepsToVisit=0 =97908610
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 5 to 2 (stepkey=1-5-2) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-5-2 (best distance of this step to the start-nodes was 5374.864036329054 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-5-2 #stepsToVisit=0 =46645502
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 5 to 1 (stepkey=4-5-1) forbiddenStepKeys=46645502
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 4 via way 5 to 1 (stepkey=4-5-1) forbiddenStepKeys=46645502
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 5 to node 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 5 to node 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 5 to node 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-5-1 (best distance of this step to the start-nodes was 6297.046305295253 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-5-1 #stepsToVisit=0 =96061566
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 3 via way 5 to 4 (stepkey=3-5-4) forbiddenStepKeys=96061566
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 5 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 5 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-5-4 (best distance of this step to the start-nodes was 6297.046305295253 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-5-4 #stepsToVisit=0 =144554112
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 7 to 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 7 to 3 (stepkey=2-7-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 5 via way 8 to 3 (stepkey=5-8-3) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.osm.data.searching.advancedAddressDB.CitiesIndex findCities
+FINEST: call findPlaces  ( Rectangle2D=java.awt.geom.Rectangle2D$Double[x=52.8286,y=55.8754,w=1.8,h=1.8])
+Dec 3, 2012 2:41:13 PM org.openstreetmap.osm.data.searching.advancedAddressDB.AbstractAddressDB$1 getSchemaVersion
+FINE: returning required schema-version of 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.osm.data.searching.advancedAddressDB.AbstractAddressDB$1 getSchemaVersion
+FINE: returning required schema-version of 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.osm.data.searching.advancedAddressDB.AbstractAddressDB$1 getSchemaVersion
+FINE: returning required schema-version of 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.osm.data.h2.DatabaseContext checkSchema
+FINE: H2-Database contains correct schema-version 4 (required is 4)!
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 5-8-3 (best distance of this step to the start-nodes was 291.5532184276655 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 5-8-3 #stepsToVisit=2 =50342470
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 8 to 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 8 to 5 (stepkey=2-8-5) forbiddenStepKeys=50342470
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-7-3 (best distance of this step to the start-nodes was 317.74893838287016 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-7-3 #stepsToVisit=3 =97913416
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 3 via way 7 to 4 (stepkey=3-7-4) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 6 via way 9 to 4 (stepkey=6-9-4) forbiddenStepKeys=0
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-7-4 (best distance of this step to the start-nodes was 1519.1459862326 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-7-4 #stepsToVisit=1 =48494468
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 7 to 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 7 to 3 (stepkey=2-7-3) forbiddenStepKeys=48494468
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 5 via way 8 to 3 (stepkey=5-8-3) forbiddenStepKeys=48494468
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 8 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 5 is via way 8 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 5-8-3 (best distance of this step to the start-nodes was 1645.2907668782088 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 5-8-3 #stepsToVisit=3 =98836938
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 8 to 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 8 to 5 (stepkey=2-8-5) forbiddenStepKeys=98836938
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-7-3 (best distance of this step to the start-nodes was 1661.1740886346652 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-7-3 #stepsToVisit=4 =148254926
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 6 via way 9 to 4 (stepkey=6-9-4) forbiddenStepKeys=148254926
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 6 via way 9 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-7-3 (best distance of this step to the start-nodes was 1676.411633151724 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-7-3 #stepsToVisit=3 =195825872
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 7 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 7 to 2 (stepkey=1-7-2) forbiddenStepKeys=195825872
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 5 via way 8 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 8 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 5 is via way 8 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-8-5 (best distance of this step to the start-nodes was 1741.3648456232186 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-8-5 #stepsToVisit=5 =243397781
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 7 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 7 to 2 (stepkey=1-7-2) forbiddenStepKeys=243397781
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 5 via way 8 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 8 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-8-5 (best distance of this step to the start-nodes was 1844.796528202685 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-8-5 #stepsToVisit=4 =291893211
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 5-8-2 (best distance of this step to the start-nodes was 1859.348071782843 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 5-8-2 #stepsToVisit=3 =342235680
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-7-2 (best distance of this step to the start-nodes was 1993.9006206358245 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-7-2 #stepsToVisit=2 =390730146
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 6-9-4 (best distance of this step to the start-nodes was 2558.5524145351583 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 6-9-4 #stepsToVisit=1 =441997099
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 9 to 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 9 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 9 to node 6
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-9-6 (best distance of this step to the start-nodes was 3216.0348245255527 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-9-6 #stepsToVisit=1 =491417012
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 1-7-2 (best distance of this step to the start-nodes was 3761.5246432567515 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 1-7-2 #stepsToVisit=0 =538064436
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: ===================================================
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: TurnRestrictedMultiTargetDijkstraRouter starting...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 2 via way 7 to 1
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-7-1 (best distance of this step to the start-nodes was 3480.9329328028484 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-7-1 #stepsToVisit=0 =47570944
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 7 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 7 to 2 (stepkey=1-7-2) forbiddenStepKeys=47570944
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 5 via way 8 to 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 1 is via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 8 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 5 is via way 8 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 5-8-2 (best distance of this step to the start-nodes was 1966.6184574667193 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 5-8-2 #stepsToVisit=2 =97913413
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 3 via way 8 to 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 8 to 5 (stepkey=2-8-5) forbiddenStepKeys=97913413
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-7-2 (best distance of this step to the start-nodes was 2072.6900237143655 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-7-2 #stepsToVisit=3 =146407879
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step ahead from node 4 via way 7 to 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 7 to 3 (stepkey=2-7-3) forbiddenStepKeys=146407879
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 5 via way 8 to 3 (stepkey=5-8-3) forbiddenStepKeys=146407879
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 4 via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 4 is via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 8 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 5 is via way 8 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 2 is via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 4-7-3 (best distance of this step to the start-nodes was 2063.5551419446506 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 4-7-3 #stepsToVisit=5 =195825867
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 3 via way 7 to 4 (stepkey=3-7-4) forbiddenStepKeys=195825867
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 6 via way 9 to 4 (stepkey=6-9-4) forbiddenStepKeys=195825867
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 6 via way 9 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 6 is via way 9 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 3 via way 7 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Best distance from node 3 is via way 7 to node 4
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-8-5 (best distance of this step to the start-nodes was 2123.614273016335 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-8-5 #stepsToVisit=6 =244321297
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 7 to 3 (stepkey=2-7-3) forbiddenStepKeys=244321297
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 5 via way 8 to 3 (stepkey=5-8-3) forbiddenStepKeys=244321297
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 5 via way 8 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 5-8-3 (best distance of this step to the start-nodes was 2124.55990969325 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 5-8-3 #stepsToVisit=5 =294663767
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 8 to 5 (stepkey=2-8-5) forbiddenStepKeys=294663767
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 8 to node 5
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 3-7-4 (best distance of this step to the start-nodes was 2136.421149029353 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 3-7-4 #stepsToVisit=4 =343158235
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 2 via way 7 to 3 (stepkey=2-7-3) forbiddenStepKeys=343158235
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 2 via way 7 to node 3
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-8-5 (best distance of this step to the start-nodes was 2173.633306604239 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-8-5 #stepsToVisit=3 =390730144
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 7 to 2 (stepkey=1-7-2) forbiddenStepKeys=390730144
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 2-7-3 (best distance of this step to the start-nodes was 2280.6505095288003 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 2-7-3 #stepsToVisit=2 =438301090
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar getNextNodes
+INFO: Scheduling step back from node 1 via way 7 to 2 (stepkey=1-7-2) forbiddenStepKeys=438301090
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Evaluating step from node 1 via way 7 to node 2
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: =================================================== We are at: 6-9-4 (best distance of this step to the start-nodes was 2829.3834628365566 )
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: Forbidding further evaluation of 6-9-4 #stepsToVisit=1 =489568043
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.routing.routers.TurnRestrictedAStar route
+INFO: found a shortest path, reconstructing path...
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+Dec 3, 2012 2:41:13 PM org.openstreetmap.travelingsalesman.navigation.traffic.TrafficRuleManager isInsideCity
+FINER: TrafficRuleManager - we are inside the cached search-area for cities
+------------- ---------------- ---------------
+
+Testcase: testRouteWayNodeSelector took 0.017 sec
+Testcase: testRouteToNode took 0.102 sec
+Testcase: testTurnRestriction took 0.027 sec
+Testcase: testTurnRestriction2 took 0.007 sec
+Testcase: testRoundAbout took 0.01 sec
+Testcase: testAlternativeWayDecision took 0.435 sec
+Testcase: testRouteRoutingStepDistanceInMeters took 0.001 sec

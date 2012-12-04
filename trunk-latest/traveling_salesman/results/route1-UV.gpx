@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="Traveling Salesman 1.0.3-RC1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<trkseg>
+<trkpt lat="34.0666168" lon="-118.4395786" >
+<name>Node on 'Hilgard Avenue'</name>
+<cmt>osm-id 122762238</cmt>
+<desc>osm-id 122762238</desc>
+</trkpt>
+<trkpt lat="34.0660665" lon="-118.4385079" >
+<name>corner  'Manning Avenue' 'Malcolm Avenue </name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0665572" lon="-118.4382046" >
+<name>Node on 'Malcolm Avenue </name>
+<cmt>osm-id 1903786636</cmt>
+<desc>osm-id 1903786636</desc>
+</trkpt>
+
+<trkpt lat="34.0668172" lon="-118.4380882" >
+<name>Node on 'Malcolm Avenue'</name>
+<cmt>osm-id 1903786636</cmt>
+<desc>osm-id 1903786636</desc>
+</trkpt>
+
+<trkpt lat="34.0671191" lon="-118.4379955" >
+<name>corner  'Malcolm Avenue' 'Glenmont Avenue' </name>
+<cmt>osm-id 123191890</cmt>
+<desc>osm-id 123191890</desc>
+</trkpt>
+
+<trkpt lat="34.067093" lon="-118.4377728" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0669753" lon="-118.4374785" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0667584" lon="-118.4372616" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0660314" lon="-118.4369524" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0656493" lon="-118.436743" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0653477" lon="-118.4363665" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0652111" lon="-118.4359814" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0651391" lon="-118.4356096" >
+<name>Node on 'Le Conte Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0649594" lon="-118.4361357" >
+<name>Node on 'Le Conte Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0648458" lon="-118.4363501" >
+<name>Node on 'Le Conte Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0645959" lon="-118.4367067" >
+<name>Node on 'Le Conte Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0645071" lon="-118.4368613" >
+<name>Node on 'Glenmont Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0644844" lon="-118.4371181" >
+<name>Node on 'Le Conte Avenue'</name>
+<cmt>osm-id 123191891</cmt>
+<desc>osm-id 123191891</desc>
+</trkpt>
+
+<trkpt lat="34.0644823" lon="-118.4372777" >
+<name>Node on 'Le Conte Avenue</name>
+<cmt>osm-id 269285944</cmt>
+<desc>osm-id 269285944</desc>
+</trkpt>
+
+</trkseg></trk></gpx>
