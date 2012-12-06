@@ -17,6 +17,7 @@ This project is called Osmosis. It's an external dependency to Traveling Salesma
 Procedure:
 
 Incorporate these 2 projects separately into your IDE.
+From trunk-latest, select 'libosm', 'osmnavigation' and 'traveling-salesman' into your IDE. From core, select osmosis-core.
 The following are the project Dependencies:
 
 1. libosm - depends on osmosis-core.jar which is generated from the Osmosis-Core project. Building libosm generates libosm.jar.
